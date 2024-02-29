@@ -1,2 +1,3 @@
-# WebsiteTest-1
-Code for a website I make when I am bored...
+# Cookie Studio
+
+Something, don't know what it is yet?
