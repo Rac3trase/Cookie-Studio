@@ -1,13 +1,12 @@
 function button1Click() {
-    document.documentElement.requestFullscreen(show)
-    alert("Fullscreen Test :D")
+    alert("Hello");
 }
 
 function openNav() {
     if (document.getElementById("mySidepanel").style.width != "250px")
         document.getElementById("mySidepanel").style.width = "250px";
     else {
-        closeNav()
+        closeNav();
     }
 }
 
