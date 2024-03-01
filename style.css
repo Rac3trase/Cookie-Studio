@@ -28,17 +28,6 @@ body {
     margin: 50px auto;
 }
 
-.button {
-    background-color: #04AA6D; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-  }
-
 button {
     background-color: black;
     outline: auto;
@@ -58,4 +47,46 @@ button:hover {
     background-color: rgb(213, 150, 61);
     transition: 0.35s;
     cursor: pointer;
+}
+
+.sidepanel {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+  
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidepanel a:hover {
+    color: #f1f1f1;
+}
+
+.openbtn {
+    position: absolute;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    padding: 10px 15px;
+    border: none;
+    top: 0;
+    right: 0;
+}
+  
+.openbtn:hover {
+    background-color: rgb(213, 150, 61);
 }
