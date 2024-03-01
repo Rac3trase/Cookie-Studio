@@ -1,5 +1,5 @@
 function button1Click() {
-    document.requestFullscreen()
+    document.documentElement.requestFullscreen(show)
     alert("Fullscreen Test :D")
 }
 
