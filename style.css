@@ -76,7 +76,8 @@ button:hover {
 }
 
 .openbtn {
-    position: absolute;
+    z-index: 1;
+    position: fixed;
     font-size: 20px;
     cursor: pointer;
     color: white;
