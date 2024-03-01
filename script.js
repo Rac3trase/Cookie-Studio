@@ -1,5 +1,5 @@
 function button1Click() {
-    alert("Hello");
+    window.location.href = "prxie.html?rammerhead";
 }
 
 function openNav() {
