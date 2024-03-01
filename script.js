@@ -1,5 +1,6 @@
 function button1Click() {
-    alert("Hello")
+    document.documentElement.requestFullscreen()
+    alert("Fullscreen Test :D")
 }
 
 function openNav() {
