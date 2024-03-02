@@ -72,6 +72,7 @@ button:hover {
 
 .sidepanel a:hover {
     color: #f1f1f1;
+    scale: 1.05;
 }
 
 .openbtn {
@@ -89,8 +90,13 @@ button:hover {
 
 .openbtn:hover {
     color: rgb(213, 150, 61);
+    scale: 0.96;
+    rotate: 180deg;
 }
 
 .btn1:hover {
     background-color: rgb(213, 150, 61);
+    scale: 1.1;
+    color: black;
+    outline-color: black;
 }
