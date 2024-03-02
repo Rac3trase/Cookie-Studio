@@ -10,7 +10,6 @@ var listRH = ["https://house.hec.to/",
     "https://ezze.4nets.org/",
     "https://egg.hmbygg.se/"];
 
-
 function start() {
     var url = listRH[(Math.floor(Math.random() * listRH.length))];
     var urlObj = new window.URL(window.location.href);
@@ -29,7 +28,6 @@ function start() {
     var script = win.document.createElement("script");
     script.src = "https://3kh0.github.io/js/main.js";
     win.document.body.appendChild(script);
-    window.close()
 }
 
 function button1Click() {
@@ -46,7 +44,6 @@ function openNav() {
 
 function closeNav() {
     document.getElementById("mySidepanel").style.width = "0px";
-    document.getElementById
 }
 
 function openNavAfter() {
