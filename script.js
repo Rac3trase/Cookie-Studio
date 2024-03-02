@@ -35,8 +35,8 @@ function button1Click() {
     Swal.fire({
         title: 'Loaded Unblocker!',
         text: 'Click To Continue...',
-        icon: 'success',
-        confirmButtonText: 'ok'
+        icon: 'info',
+        confirmButtonText: 'Ok!'
     })
 }
 
