@@ -86,7 +86,7 @@ button:hover {
     position: fixed;
     font-size: 20px;
     cursor: pointer;
-    color: white;
+    color: darkgrey;
     outline: none;
     padding: 10px 10px;
     border: none;
@@ -97,16 +97,8 @@ button:hover {
 }
 
 .openbtn:hover {
-    color: rgb(213, 150, 61);
-    scale: 1.1;
+    color: white;
     transition-timing-function: ease-in;
-}
-
-.openbtn:active {
-    transition: 0.01;
-    color: rgb(255, 204, 132);
-    scale: 0.95;
-    transition-timing-function: ease-in-out;
 }
 
 .btn1 {
