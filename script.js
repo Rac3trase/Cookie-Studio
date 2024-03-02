@@ -32,6 +32,12 @@ function start() {
 
 function button1Click() {
     start()
+    Swal.fire({
+        title: 'Loaded Unblocker!',
+        text: 'Click To Continue...',
+        icon: 'success',
+        confirmButtonText: 'ok'
+    })
 }
 
 function openNav() {
