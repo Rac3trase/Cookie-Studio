@@ -33,17 +33,20 @@ function start() {
 }
 
 function button1Click() {
-    start()
-}
+    alert("Updating website!")
 
 function openNav() {
-    if (document.getElementById("mySidepanel").style.width != "250px")
-        document.getElementById("mySidepanel").style.width = "250px";
-    else {
+    if (document.getElementById("mySidepanel").style.width != "250px") {
+        openNavAfter();
+    } else {
         closeNav();
     }
 }
 
 function closeNav() {
-    document.getElementById("mySidepanel").style.width = "0";
+    document.getElementById("mySidepanel").style.width = "0px";
+}
+
+function openNavAfter() {
+    document.getElementById("mySidepanel").style.width = "250px";
 }

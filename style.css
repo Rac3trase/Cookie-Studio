@@ -44,7 +44,6 @@ button {
 }
 
 button:hover {
-    background-color: rgb(213, 150, 61);
     transition: 0.35s;
     cursor: pointer;
 }
@@ -82,12 +81,16 @@ button:hover {
     cursor: pointer;
     color: white;
     outline: none;
-    padding: 10px 15px;
+    padding: 10px 10px;
     border: none;
     top: 0;
     right: 0;
 }
-  
+
 .openbtn:hover {
+    color: rgb(213, 150, 61);
+}
+
+.btn1:hover {
     background-color: rgb(213, 150, 61);
 }
