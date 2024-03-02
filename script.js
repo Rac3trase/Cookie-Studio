@@ -1,4 +1,5 @@
-const { default: swal } = require("sweetalert");
+import swal from 'sweetalert';
+import Swal from 'sweetalert2'
 
 var listRH = ["https://house.hec.to/",
     "https://sten.4nets.org/",
@@ -53,7 +54,7 @@ function openNavAfter() {
 }
 
 function niceButton() {
-    alert("Test")
+    Swal.fire("Clicked Button?", "Wow thats a nice button", "success");
 }
 
 function setCookie(cName, cValue, expDays) {
