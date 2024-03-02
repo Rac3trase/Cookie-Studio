@@ -55,3 +55,12 @@ function closeNav() {
 function openNavAfter() {
     document.getElementById("mySidepanel").style.width = "250px";
 }
+
+function niceButton() {
+    Swal.fire({
+        title: 'Nice Button!',
+        text: 'What a nice button... So clicky!',
+        icon: 'success',
+        confirmButtonText: 'WOW!'
+    })
+}
