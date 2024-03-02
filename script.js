@@ -34,6 +34,7 @@ function start() {
 
 function button1Click() {
     alert("Updating website!")
+}
 
 function openNav() {
     if (document.getElementById("mySidepanel").style.width != "250px") {
