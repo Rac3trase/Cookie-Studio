@@ -68,6 +68,7 @@ button:hover {
     color: #818181;
     display: block;
     transition: 0.3s;
+    transition-timing-function: ease-in-out;
 }
 
 .sidepanel a:hover {
@@ -86,17 +87,25 @@ button:hover {
     border: none;
     top: 0;
     right: 0;
+    transition-timing-function: ease-out;
 }
 
 .openbtn:hover {
     color: rgb(213, 150, 61);
     scale: 0.96;
     rotate: 180deg;
+    transition-timing-function: ease-in;
+}
+
+.btn1 {
+    transition: 1;
 }
 
 .btn1:hover {
     background-color: rgb(213, 150, 61);
     scale: 1.1;
     color: black;
-    outline-color: black;
+    outline-color: transparent;
+    transition-timing-function: linear;
+    transition: 0.35;
 }
