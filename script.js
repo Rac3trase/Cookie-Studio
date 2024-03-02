@@ -51,7 +51,12 @@ function openNavAfter() {
 }
 
 function niceButton() {
-    alert("TEST")
+    Swal.fire({
+        title: 'CLICK!',
+        text: 'Do you want to continue',
+        icon: 'success',
+        confirmButtonText: 'Cool'
+      })
 }
 
 function setCookie(cName, cValue, expDays) {
