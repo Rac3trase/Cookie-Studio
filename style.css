@@ -41,6 +41,8 @@ body {
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .sidepanel a {
