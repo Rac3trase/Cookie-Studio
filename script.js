@@ -33,7 +33,7 @@ function start() {
 }
 
 function button1Click() {
-    alert("Updating website!")
+    start()
 }
 
 function openNav() {
