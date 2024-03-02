@@ -153,7 +153,7 @@ button:hover {
 
 .card:hover {
     transition: 0.35s;
-    background-color: grey;
+    background-color: lightslategrey;
 }
 
 @media screen and (max-width: 700px) {
