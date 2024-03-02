@@ -1,3 +1,5 @@
+const { default: swal } = require("sweetalert");
+
 var listRH = ["https://house.hec.to/",
     "https://sten.4nets.org/",
     "https://gabe-skibidi-sigma.browell.ar/",
@@ -32,12 +34,6 @@ function start() {
 
 function button1Click() {
     start()
-    Swal.fire({
-        title: 'Loaded Unblocker!',
-        text: 'Click To Continue...',
-        icon: 'info',
-        confirmButtonText: 'Ok!'
-    })
 }
 
 function openNav() {
@@ -57,12 +53,7 @@ function openNavAfter() {
 }
 
 function niceButton() {
-    Swal.fire({
-        title: 'Nice Button!',
-        text: 'What a nice button... So clicky!',
-        icon: 'success',
-        confirmButtonText: 'WOW!'
-    })
+    alert("Test")
 }
 
 function setCookie(cName, cValue, expDays) {
