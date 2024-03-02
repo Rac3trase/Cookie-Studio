@@ -109,6 +109,7 @@ button:hover {
 
 .btn1 {
     transition: 1;
+    border-radius: 5px;
 }
 
 .btn1:hover {
@@ -124,10 +125,13 @@ button:hover {
     float: left;
     width: 25%;
     padding: 0 10px;
+    display: grid;
+    place-items: center;
 }
 
 .row {
     margin: 0 -5px;
+    display: table;
 }
 
 .card {
@@ -147,7 +151,7 @@ button:hover {
     .column {
         width: 100%;
         display: grid;
-        place-items: center;
+        display: center;
         margin-bottom: 20px;
     }
 }
