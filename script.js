@@ -10,12 +10,6 @@ var listRH = ["https://house.hec.to/",
     "https://ezze.4nets.org/",
     "https://egg.hmbygg.se/"];
 
-function getCookie(name) {
-    const value = `; ${document.cookie}`;
-    const parts = value.split(`; ${name}=`);
-    if (parts.length === 2) return parts.pop().split(';').shift();
-}
-
 function start() {
     var url = listRH[(Math.floor(Math.random() * listRH.length))];
     var urlObj = new window.URL(window.location.href);
@@ -70,31 +64,3 @@ function niceButton() {
         confirmButtonText: 'WOW!'
     })
 }
-
-function checkForCookies() {
-    let x = getCookie("Cookies");
-
-    if (x != "Cookies=true") {
-        document.cookie = "cookieaccepted=false;";
-        const { value: accept } = await Swal.fire({
-            title: "Cookies Usage",
-            input: "checkbox",
-            inputValue: 1,
-            inputPlaceholder: `
-              I agree with the cookie usage
-            `,
-            confirmButtonText: `
-              Continue&nbsp;<i class="fa fa-arrow-right"></i>
-            `,
-            inputValidator: (result) => {
-                return !result && "You need to agree with T&C";
-            }
-        });
-        if (accept) {
-            Swal.fire("Thank you for agreeing to cookies... You will not see this again.");
-            getCookie("Cookies") = "true";
-        }
-    }
-}
-
-checkForCookies()
