@@ -1,6 +1,3 @@
-import swal from 'sweetalert';
-import Swal from 'sweetalert2'
-
 var listRH = ["https://house.hec.to/",
     "https://sten.4nets.org/",
     "https://gabe-skibidi-sigma.browell.ar/",
@@ -54,7 +51,7 @@ function openNavAfter() {
 }
 
 function niceButton() {
-    Swal.fire("Clicked Button?", "Wow thats a nice button", "success");
+    alert("TEST")
 }
 
 function setCookie(cName, cValue, expDays) {
