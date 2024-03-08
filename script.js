@@ -16,7 +16,7 @@ function openUrl(url1) {
         url = "https://" + url.split("https://").pop();
     } else if (url.substring(0, 7) == "http://") {
         url = "https://" + url.split("http://").pop();
-    }
+    };
 
     win = window.open();
     win.document.body.style.margin = "0";
