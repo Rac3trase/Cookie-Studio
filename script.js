@@ -11,14 +11,14 @@ var listRH = ["https://house.hec.to/",
     "https://egg.hmbygg.se/"];
 
 function openUrl(url1) {
-    var url = url1
+    var url = url1;
     var urlObj = new window.URL(window.location.href);
     if (url.value.substring(0, 8) !== "https://" && url.value.substring(0, 7) !== "http://") {
         url.value = "https://" + url.value.split("https://").pop();
     } else if (url.value.substring(0, 7) == "http://") {
         url.value = "https://" + url.value.split("http://").pop();
     }
-    
+
     win = window.open();
     win.document.body.style.margin = "0";
     win.document.body.style.height = "100vh";
@@ -34,7 +34,8 @@ function openUrl(url1) {
 }
 
 function button1Click() {
-    openUrl(listRH[(Math.floor(Math.random() * listRH.length))]);
+    var url = listRH[(Math.floor(Math.random() * listRH.length))]
+    openUrl(url);
 }
 
 function openNav() {
