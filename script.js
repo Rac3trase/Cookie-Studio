@@ -10,10 +10,16 @@ var listRH = ["https://house.hec.to/",
     "https://ezze.4nets.org/",
     "https://egg.hmbygg.se/"];
 
-function start() {
-    var url = listRH[(Math.floor(Math.random() * listRH.length))];
+function openUrl(url1) {
+    var url = url1
     var urlObj = new window.URL(window.location.href);
-    var win = window.open();
+    if (url.value.substring(0, 8) !== "https://" && url.value.substring(0, 7) !== "http://") {
+        url.value = "https://" + url.value.split("https://").pop();
+    } else if (url.value.substring(0, 7) == "http://") {
+        url.value = "https://" + url.value.split("http://").pop();
+    }
+    
+    win = window.open();
     win.document.body.style.margin = "0";
     win.document.body.style.height = "100vh";
     var iframe = win.document.createElement("iframe");
@@ -23,15 +29,12 @@ function start() {
     iframe.style.margin = "0";
     iframe.referrerpolicy = "no-referrer";
     iframe.allow = "fullscreen";
-    iframe.src = url.toString();
+    iframe.src = url.value;
     win.document.body.appendChild(iframe);
-    var script = win.document.createElement("script");
-    script.src = "https://3kh0.github.io/js/main.js";
-    win.document.body.appendChild(script);
 }
 
 function button1Click() {
-    start()
+    openUrl(listRH[(Math.floor(Math.random() * listRH.length))]);
 }
 
 function openNav() {
@@ -56,7 +59,7 @@ function niceButton() {
         text: 'Do you want to continue',
         icon: 'success',
         confirmButtonText: 'Cool'
-      })
+    })
 }
 
 function setCookie(cName, cValue, expDays) {
