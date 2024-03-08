@@ -13,10 +13,10 @@ var listRH = ["https://house.hec.to/",
 function openUrl(url1) {
     var url = url1;
     var urlObj = new window.URL(window.location.href);
-    if (url.value.substring(0, 8) !== "https://" && url.value.substring(0, 7) !== "http://") {
-        url.value = "https://" + url.value.split("https://").pop();
-    } else if (url.value.substring(0, 7) == "http://") {
-        url.value = "https://" + url.value.split("http://").pop();
+    if (url.substring(0, 8) !== "https://" && url.substring(0, 7) !== "http://") {
+        url = "https://" + url.split("https://").pop();
+    } else if (url.substring(0, 7) == "http://") {
+        url = "https://" + url.split("http://").pop();
     }
 
     win = window.open();
@@ -29,7 +29,7 @@ function openUrl(url1) {
     iframe.style.margin = "0";
     iframe.referrerpolicy = "no-referrer";
     iframe.allow = "fullscreen";
-    iframe.src = url.value;
+    iframe.src = url;
     win.document.body.appendChild(iframe);
 }
 
