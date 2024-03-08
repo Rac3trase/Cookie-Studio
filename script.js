@@ -33,8 +33,13 @@ function openUrl(url1) {
     win.document.body.appendChild(iframe);
 }
 
-function button1Click() {
+function openUnblock() {
     var url = listRH[(Math.floor(Math.random() * listRH.length))]
+    openUrl(url);
+}
+
+function openUnblock() {
+    var url = "https://foxmoss.com/main/games/1v1lol/"
     openUrl(url);
 }
 
@@ -56,10 +61,10 @@ function openNavAfter() {
 
 function niceButton() {
     Swal.fire({
-        title: 'CLICK!',
-        text: 'Do you want to continue',
+        title: 'wow!',
+        text: 'Very Cool',
         icon: 'success',
-        confirmButtonText: 'Cool'
+        confirmButtonText: 'Click...'
     })
 }
 
