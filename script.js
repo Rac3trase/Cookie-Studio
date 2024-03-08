@@ -1,5 +1,4 @@
 var listRH = ["https://house.hec.to/",
-    "https://sten.4nets.org/",
     "https://gabe-skibidi-sigma.browell.ar/",
     "https://tgrh.fbsdbox.net/",
     "https://yhtjygh.haleymonroe.com/",
