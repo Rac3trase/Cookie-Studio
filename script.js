@@ -38,7 +38,7 @@ function openUnblock() {
     openUrl(url);
 }
 
-function openUnblock() {
+function open1v1() {
     var url = "https://foxmoss.com/main/games/1v1lol/"
     openUrl(url);
 }
