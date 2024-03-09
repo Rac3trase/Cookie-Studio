@@ -398,8 +398,8 @@ function openKirka() {
     win.document.body.appendChild(iframe);
 }
 
-function openUnblockGoogle() {
-    var url = "https://totallyscience.co/service/hvtrs8%2F-wuw%2Cgmoelg.aoo%2F";
+function openUnblock1() {
+    var url = "https://nebulaproxy.io/";
     var urlObj = new window.URL(window.location.href);
     if (url.substring(0, 8) !== "https://" && url.substring(0, 7) !== "http://") {
         url = "https://" + url.split("https://").pop();
