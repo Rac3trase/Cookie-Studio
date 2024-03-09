@@ -156,3 +156,8 @@ button:hover {
         margin-bottom: 20px;
     }
 }
+
+widgetbot {
+    height: 500px;
+    width: 700px;
+}

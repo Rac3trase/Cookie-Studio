@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cookie Studio</title>
+    <title>Cookie Studio - Chat</title>
     <link rel="shortcut icon" type="image/x-icon" href="Images/favicon.ico">
     <link type="text/css" rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
 </head>
 
 <body>
@@ -20,9 +21,11 @@
 
     <button id="openButton" class="openbtn" onclick="openNav()">&#9776;</button>
 
-    <h1>Welcome to <strong style="color: rgb(213, 150, 61);">Cookie Studio</strong></h1>
+    <button onclick="infoChat()">How to start chatting</button>
 
-    <p>Cookie Studio is a customizable in development website made by a independent developer.</p>
+    <br>
+
+    <widgetbot server="1215857059950624818" channel="1215857060478980277"></widgetbot>
 </body>
 
 </html>

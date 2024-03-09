@@ -121,3 +121,12 @@ function getCookie(cName) {
     })
     return res;
 }
+
+function infoChat() {
+    Swal.fire({
+        title: 'Welcome...',
+        text: 'How to start: First click general, then press the message box and put in a username you want, Then you are done! Enjoy chatting with friends :D',
+        icon: 'info',
+        confirmButtonText: 'Ok!'
+    })
+}
