@@ -83,6 +83,7 @@ button:hover {
 
 .openbtn {
     z-index: 1;
+    background-color: transparent;
     position: fixed;
     font-size: 20px;
     cursor: pointer;
@@ -160,4 +161,32 @@ button:hover {
 widgetbot {
     height: 500px;
     width: 700px;
+    position: relative;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    scroll-behavior: smooth;
+}
+
+.fullscreenBtn {
+    background-color: transparent;
+    position: relative;
+    font-size: 20px;
+    cursor: pointer;
+    color: darkgrey;
+    outline: none;
+    padding: 10px 10px;
+    height: 45px;
+    width: 40px;
+    border: none;
+    text-align: center;
+    transition-timing-function: ease-out;
+    transition: 0.1;
+}
+
+.fullscreenBtn:hover {
+    color: white;
+    transition-timing-function: ease-in;
 }
