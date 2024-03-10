@@ -42,392 +42,51 @@ function openUrl(url1) {
 }
 
 function openUnblock() {
-    var url = listRH[(Math.floor(Math.random() * listRH.length))]
-    openUrl(url);
+    openUrl(listRH[(Math.floor(Math.random() * listRH.length))]);
 }
 
 function open1v1() {
-    var url = "https://foxmoss.com/main/games/1v1lol/";
-    var urlObj = new window.URL(window.location.href);
-    if (url.substring(0, 8) !== "https://" && url.substring(0, 7) !== "http://") {
-        url = "https://" + url.split("https://").pop();
-    } else if (url.substring(0, 7) == "http://") {
-        url = "https://" + url.split("http://").pop();
-    };
-
-    win = window.open();
-    win.document.body.style.margin = "0";
-    win.document.body.style.height = "100vh";
-    win.document.title = "Calculator";
-    var iframe = win.document.createElement("iframe");
-    iframe.style.border = "none";
-    iframe.style.width = "100%";
-    iframe.style.height = "100%";
-    iframe.style.margin = "0";
-    iframe.referrerpolicy = "no-referrer";
-    iframe.allow = "fullscreen";
-    iframe.src = url;
-
-    var favi;
-    favi = win.document.createElement('link');
-    favi.rel = 'icon';
-    win.document.head.appendChild(favi);
-
-    favi.href = '/Images/Calculator.png';
-
-    win.document.body.appendChild(iframe);
+    openUrl("https://foxmoss.com/main/games/1v1lol/");
 }
 
 function openOvO() {
-    var url = "https://foxmoss.com/main/games/ovo/game.html";
-    var urlObj = new window.URL(window.location.href);
-    if (url.substring(0, 8) !== "https://" && url.substring(0, 7) !== "http://") {
-        url = "https://" + url.split("https://").pop();
-    } else if (url.substring(0, 7) == "http://") {
-        url = "https://" + url.split("http://").pop();
-    };
-
-    win = window.open();
-    win.document.body.style.margin = "0";
-    win.document.body.style.height = "100vh";
-    win.document.title = "Calculator";
-    var iframe = win.document.createElement("iframe");
-    iframe.style.border = "none";
-    iframe.style.width = "100%";
-    iframe.style.height = "100%";
-    iframe.style.margin = "0";
-    iframe.referrerpolicy = "no-referrer";
-    iframe.allow = "fullscreen";
-    iframe.src = url;
-
-    var favi;
-    favi = win.document.createElement('link');
-    favi.rel = 'icon';
-    win.document.head.appendChild(favi);
-
-    favi.href = '/Images/Calculator.png';
-
-    win.document.body.appendChild(iframe);
+    openUrl("https://foxmoss.com/main/games/ovo/game.html/");
 }
 
 function openFnf() {
-    var url = "https://foxmoss.com/main/games/fridaynightfunkin/";
-    var urlObj = new window.URL(window.location.href);
-    if (url.substring(0, 8) !== "https://" && url.substring(0, 7) !== "http://") {
-        url = "https://" + url.split("https://").pop();
-    } else if (url.substring(0, 7) == "http://") {
-        url = "https://" + url.split("http://").pop();
-    };
-
-    win = window.open();
-    win.document.body.style.margin = "0";
-    win.document.body.style.height = "100vh";
-    win.document.title = "Calculator";
-    var iframe = win.document.createElement("iframe");
-    iframe.style.border = "none";
-    iframe.style.width = "100%";
-    iframe.style.height = "100%";
-    iframe.style.margin = "0";
-    iframe.referrerpolicy = "no-referrer";
-    iframe.allow = "fullscreen";
-    iframe.src = url;
-
-    var favi;
-    favi = win.document.createElement('link');
-    favi.rel = 'icon';
-    win.document.head.appendChild(favi);
-
-    favi.href = '/Images/Calculator.png';
-
-    win.document.body.appendChild(iframe);
+    openUrl("https://foxmoss.com/main/games/fridaynightfunkin/");
 }
 
 function openJF() {
-    var url = "https://games.odd.rip/play/just-fall/";
-    var urlObj = new window.URL(window.location.href);
-    if (url.substring(0, 8) !== "https://" && url.substring(0, 7) !== "http://") {
-        url = "https://" + url.split("https://").pop();
-    } else if (url.substring(0, 7) == "http://") {
-        url = "https://" + url.split("http://").pop();
-    };
-
-    win = window.open();
-    win.document.body.style.margin = "0";
-    win.document.body.style.height = "100vh";
-    win.document.title = "Calculator";
-    var iframe = win.document.createElement("iframe");
-    iframe.style.border = "none";
-    iframe.style.width = "100%";
-    iframe.style.height = "100%";
-    iframe.style.margin = "0";
-    iframe.referrerpolicy = "no-referrer";
-    iframe.allow = "fullscreen";
-    iframe.src = url;
-
-    var favi;
-    favi = win.document.createElement('link');
-    favi.rel = 'icon';
-    win.document.head.appendChild(favi);
-
-    favi.href = '/Images/Calculator.png';
-
-    win.document.body.appendChild(iframe);
+    openUrl("https://games.odd.rip/play/just-fall/");
 }
 
 function openRetroBowl() {
-    var url = "https://games.odd.rip/play/retrobowl/";
-    var urlObj = new window.URL(window.location.href);
-    if (url.substring(0, 8) !== "https://" && url.substring(0, 7) !== "http://") {
-        url = "https://" + url.split("https://").pop();
-    } else if (url.substring(0, 7) == "http://") {
-        url = "https://" + url.split("http://").pop();
-    };
-
-    win = window.open();
-    win.document.body.style.margin = "0";
-    win.document.body.style.height = "100vh";
-    win.document.title = "Calculator";
-    var iframe = win.document.createElement("iframe");
-    iframe.style.border = "none";
-    iframe.style.width = "100%";
-    iframe.style.height = "100%";
-    iframe.style.margin = "0";
-    iframe.referrerpolicy = "no-referrer";
-    iframe.allow = "fullscreen";
-    iframe.src = url;
-
-    var favi;
-    favi = win.document.createElement('link');
-    favi.rel = 'icon';
-    win.document.head.appendChild(favi);
-
-    favi.href = '/Images/Calculator.png';
-
-    win.document.body.appendChild(iframe);
+    openUrl("https://games.odd.rip/play/retrobowl/");
 }
 
 function openSlope() {
-    var url = "https://games.odd.rip/play/slope/";
-    var urlObj = new window.URL(window.location.href);
-    if (url.substring(0, 8) !== "https://" && url.substring(0, 7) !== "http://") {
-        url = "https://" + url.split("https://").pop();
-    } else if (url.substring(0, 7) == "http://") {
-        url = "https://" + url.split("http://").pop();
-    };
-
-    win = window.open();
-    win.document.body.style.margin = "0";
-    win.document.body.style.height = "100vh";
-    win.document.title = "Calculator";
-    var iframe = win.document.createElement("iframe");
-    iframe.style.border = "none";
-    iframe.style.width = "100%";
-    iframe.style.height = "100%";
-    iframe.style.margin = "0";
-    iframe.referrerpolicy = "no-referrer";
-    iframe.allow = "fullscreen";
-    iframe.src = url;
-
-    var favi;
-    favi = win.document.createElement('link');
-    favi.rel = 'icon';
-    win.document.head.appendChild(favi);
-
-    favi.href = '/Images/Calculator.png';
-
-    win.document.body.appendChild(iframe);
+    openUrl("https://games.odd.rip/play/slope/");
 }
 
 function openPIO2() {
-    var url = "https://games.odd.rip/play/paperio/";
-    var urlObj = new window.URL(window.location.href);
-    if (url.substring(0, 8) !== "https://" && url.substring(0, 7) !== "http://") {
-        url = "https://" + url.split("https://").pop();
-    } else if (url.substring(0, 7) == "http://") {
-        url = "https://" + url.split("http://").pop();
-    };
-
-    win = window.open();
-    win.document.body.style.margin = "0";
-    win.document.body.style.height = "100vh";
-    win.document.title = "Calculator";
-    var iframe = win.document.createElement("iframe");
-    iframe.style.border = "none";
-    iframe.style.width = "100%";
-    iframe.style.height = "100%";
-    iframe.style.margin = "0";
-    iframe.referrerpolicy = "no-referrer";
-    iframe.allow = "fullscreen";
-    iframe.src = url;
-
-    var favi;
-    favi = win.document.createElement('link');
-    favi.rel = 'icon';
-    win.document.head.appendChild(favi);
-
-    favi.href = '/Images/Calculator.png';
-
-    win.document.body.appendChild(iframe);
+    openUrl("https://games.odd.rip/play/paperio/");
 }
 
 function openBStars() {
-    var url = "https://games.odd.rip/play/basketball-stars/";
-    var urlObj = new window.URL(window.location.href);
-    if (url.substring(0, 8) !== "https://" && url.substring(0, 7) !== "http://") {
-        url = "https://" + url.split("https://").pop();
-    } else if (url.substring(0, 7) == "http://") {
-        url = "https://" + url.split("http://").pop();
-    };
-
-    win = window.open();
-    win.document.body.style.margin = "0";
-    win.document.body.style.height = "100vh";
-    win.document.title = "Calculator";
-    var iframe = win.document.createElement("iframe");
-    iframe.style.border = "none";
-    iframe.style.width = "100%";
-    iframe.style.height = "100%";
-    iframe.style.margin = "0";
-    iframe.referrerpolicy = "no-referrer";
-    iframe.allow = "fullscreen";
-    iframe.src = url;
-
-    var favi;
-    favi = win.document.createElement('link');
-    favi.rel = 'icon';
-    win.document.head.appendChild(favi);
-
-    favi.href = '/Images/Calculator.png';
-
-    win.document.body.appendChild(iframe);
+    openUrl("https://games.odd.rip/play/basketball-stars/");
 }
 
 function openBTTS() {
-    var url = "https://games.odd.rip/play/big-tower-tiny-square/";
-    var urlObj = new window.URL(window.location.href);
-    if (url.substring(0, 8) !== "https://" && url.substring(0, 7) !== "http://") {
-        url = "https://" + url.split("https://").pop();
-    } else if (url.substring(0, 7) == "http://") {
-        url = "https://" + url.split("http://").pop();
-    };
-
-    win = window.open();
-    win.document.body.style.margin = "0";
-    win.document.body.style.height = "100vh";
-    win.document.title = "Calculator";
-    var iframe = win.document.createElement("iframe");
-    iframe.style.border = "none";
-    iframe.style.width = "100%";
-    iframe.style.height = "100%";
-    iframe.style.margin = "0";
-    iframe.referrerpolicy = "no-referrer";
-    iframe.allow = "fullscreen";
-    iframe.src = url;
-
-    var favi;
-    favi = win.document.createElement('link');
-    favi.rel = 'icon';
-    win.document.head.appendChild(favi);
-
-    favi.href = '/Images/Calculator.png';
-
-    win.document.body.appendChild(iframe);
+    openUrl("https://games.odd.rip/play/big-tower-tiny-square/");
 }
 
 function openSWSurfers() {
-    var url = "https://foxmoss.com/main/games/subway/";
-    var urlObj = new window.URL(window.location.href);
-    if (url.substring(0, 8) !== "https://" && url.substring(0, 7) !== "http://") {
-        url = "https://" + url.split("https://").pop();
-    } else if (url.substring(0, 7) == "http://") {
-        url = "https://" + url.split("http://").pop();
-    };
-
-    win = window.open();
-    win.document.body.style.margin = "0";
-    win.document.body.style.height = "100vh";
-    win.document.title = "Calculator";
-    var iframe = win.document.createElement("iframe");
-    iframe.style.border = "none";
-    iframe.style.width = "100%";
-    iframe.style.height = "100%";
-    iframe.style.margin = "0";
-    iframe.referrerpolicy = "no-referrer";
-    iframe.allow = "fullscreen";
-    iframe.src = url;
-
-    var favi;
-    favi = win.document.createElement('link');
-    favi.rel = 'icon';
-    win.document.head.appendChild(favi);
-
-    favi.href = '/Images/Calculator.png';
-
-    win.document.body.appendChild(iframe);
+    openUrl("https://foxmoss.com/main/games/subway/");
 }
 
 function openKirka() {
-    var url = "https://kirka.io/";
-    var urlObj = new window.URL(window.location.href);
-    if (url.substring(0, 8) !== "https://" && url.substring(0, 7) !== "http://") {
-        url = "https://" + url.split("https://").pop();
-    } else if (url.substring(0, 7) == "http://") {
-        url = "https://" + url.split("http://").pop();
-    };
-
-    win = window.open();
-    win.document.body.style.margin = "0";
-    win.document.body.style.height = "100vh";
-    win.document.title = "Calculator";
-    var iframe = win.document.createElement("iframe");
-    iframe.style.border = "none";
-    iframe.style.width = "100%";
-    iframe.style.height = "100%";
-    iframe.style.margin = "0";
-    iframe.referrerpolicy = "no-referrer";
-    iframe.allow = "fullscreen";
-    iframe.src = url;
-
-    var favi;
-    favi = win.document.createElement('link');
-    favi.rel = 'icon';
-    win.document.head.appendChild(favi);
-
-    favi.href = '/Images/Calculator.png';
-
-    win.document.body.appendChild(iframe);
-}
-
-function openUnblock1() {
-    var url = "https://nebulaproxy.io/";
-    var urlObj = new window.URL(window.location.href);
-    if (url.substring(0, 8) !== "https://" && url.substring(0, 7) !== "http://") {
-        url = "https://" + url.split("https://").pop();
-    } else if (url.substring(0, 7) == "http://") {
-        url = "https://" + url.split("http://").pop();
-    };
-
-    win = window.open();
-    win.document.body.style.margin = "0";
-    win.document.body.style.height = "100vh";
-    win.document.title = "Calculator";
-    var iframe = win.document.createElement("iframe");
-    iframe.style.border = "none";
-    iframe.style.width = "100%";
-    iframe.style.height = "100%";
-    iframe.style.margin = "0";
-    iframe.referrerpolicy = "no-referrer";
-    iframe.allow = "fullscreen";
-    iframe.src = url;
-
-    var favi;
-    favi = win.document.createElement('link');
-    favi.rel = 'icon';
-    win.document.head.appendChild(favi);
-
-    favi.href = '/Images/Calculator.png';
-
-    win.document.body.appendChild(iframe);
+    openUrl("https://kirka.io/");
 }
 
 function openNav() {
@@ -474,5 +133,5 @@ function getCookie(cName) {
 }
 
 function fullscreenIframe() {
-    document.body.querySelector("Iframe").requestFullscreen()
+    document.body.querySelector("Iframe").requestFullscreen();
 }
