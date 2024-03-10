@@ -30,6 +30,7 @@ function openUrl(url1) {
     iframe.referrerpolicy = "no-referrer";
     iframe.allow = "fullscreen";
     iframe.src = url;
+    iframe.value = "Loading embed... <strong>May take a while!</strong>"
 
     var favi;
     favi = win.document.createElement('link');
