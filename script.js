@@ -1,5 +1,3 @@
-import { isUrl } from 'is-url';
-
 const listRH = ["https://house.hec.to/",
     "https://tgrh.fbsdbox.net/",
     "https://yhtjygh.haleymonroe.com/",
@@ -86,14 +84,9 @@ function openSWSurfers() {
 }
 
 function aboutblankembed() {
-    var url = prompt("About:blank Embedder \nMAKE SURE IT HAS HTTPS:// IN URL!", "https://example.com");
-    const checkurl = isUrl(url)
-
-    if (checkurl) {
-        openUrl(url)
-    } else {
-        alert("Incorrect url!")
-    }
+    var url = prompt("About:blank Embedder", "https://example.com");
+    
+    openUrl(url)
 }
 
 function openNav() {
