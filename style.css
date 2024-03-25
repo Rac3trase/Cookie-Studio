@@ -158,12 +158,6 @@ button:hover {
     }
 }
 
-widgetbot {
-    height: 400px;
-    width: 600px;
-    position: relative;
-}
-
 ::-webkit-scrollbar {
     width: 0;
     height: 0;
