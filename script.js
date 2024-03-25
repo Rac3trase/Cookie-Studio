@@ -1,5 +1,4 @@
 const listRH = ["https://house.hec.to/",
-    "https://tgrh.fbsdbox.net/",
     "https://yhtjygh.haleymonroe.com/",
     "https://ujymh.hktrustco.hk/",
     "https://ty5hrtng.simonmonroe.com/",
