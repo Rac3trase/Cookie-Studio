@@ -84,7 +84,7 @@ function openSWSurfers() {
 
 function aboutblankembed() {
     var url = prompt("About:blank Embedder", "https://example.com");
-    
+
     openUrl(url)
 }
 
