@@ -47,7 +47,7 @@ function open1v1() {
 }
 
 function openOvO() {
-    openUrl("https://foxmoss.com/main/games/ovo/game.html/");
+    openUrl("https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://googleusercontent.b-cdn.net/ovo/ovo.xml&container=ig");
 }
 
 function openFnf() {
@@ -80,6 +80,10 @@ function openBTTS() {
 
 function openSWSurfers() {
     openUrl("https://foxmoss.com/main/games/subway/");
+}
+
+function openCookieClick() {
+    openUrl("https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/bobydob/JSEngine@e7d53b913d54429e5e118ca9541fb0f8f1f66bdc/dist/cc.xml&container=ig");
 }
 
 function aboutblankembed() {
