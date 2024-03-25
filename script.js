@@ -1,11 +1,11 @@
-var listRH = ["https://house.hec.to/",
-    "https://gabe-skibidi-sigma.browell.ar/",
+import isUrl from 'is-url';
+
+const listRH = ["https://house.hec.to/",
     "https://tgrh.fbsdbox.net/",
     "https://yhtjygh.haleymonroe.com/",
     "https://ujymh.hktrustco.hk/",
     "https://ty5hrtng.simonmonroe.com/",
     "https://gabe-has-motion.freengers.com/",
-    "https://easymath.4nets.org/",
     "https://ezze.4nets.org/",
     "https://egg.hmbygg.se/"];
 
@@ -85,8 +85,15 @@ function openSWSurfers() {
     openUrl("https://foxmoss.com/main/games/subway/");
 }
 
-function openKirka() {
-    openUrl("https://kirka.io/");
+function aboutblankembed() {
+    var url = prompt("About:blank Embedder \nMAKE SURE IT HAS HTTPS:// IN URL!", "https://example.com");
+    const checkurl = isUrl(url)
+
+    if (checkurl) {
+        openUrl(url)
+    } else {
+        alert("Incorrect url!")
+    }
 }
 
 function openNav() {
