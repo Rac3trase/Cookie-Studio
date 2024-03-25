@@ -1,4 +1,4 @@
-import isUrl from 'is-url';
+import { isUrl } from 'is-url';
 
 const listRH = ["https://house.hec.to/",
     "https://tgrh.fbsdbox.net/",
