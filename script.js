@@ -1,11 +1,3 @@
-const listRH = ["https://house.hec.to/",
-    "https://yhtjygh.haleymonroe.com/",
-    "https://ujymh.hktrustco.hk/",
-    "https://ty5hrtng.simonmonroe.com/",
-    "https://gabe-has-motion.freengers.com/",
-    "https://ezze.4nets.org/",
-    "https://egg.hmbygg.se/"];
-
 function openUrl(url1) {
     var url = url1;
     var urlObj = new window.URL(window.location.href);
@@ -38,12 +30,24 @@ function openUrl(url1) {
     win.document.body.appendChild(iframe);
 }
 
+function getRList(list1) {
+    return list1[Math.floor(Math.random() * list1.length)];
+}
+
 function openUnblock() {
-    openUrl(listRH[(Math.floor(Math.random() * listRH.length))]);
+    const listRH = ["https://house.hec.to/",
+        "https://yhtjygh.haleymonroe.com/",
+        "https://ujymh.hktrustco.hk/",
+        "https://ty5hrtng.simonmonroe.com/",
+        "https://gabe-has-motion.freengers.com/",
+        "https://ezze.4nets.org/",
+        "https://egg.hmbygg.se/"];
+    openUrl(getRList(listRH));
 }
 
 function open1v1() {
-    openUrl("https://foxmoss.com/main/games/1v1lol/");
+    const list1v1 = ["https://foxmoss.com/main/games/1v1lol/", "https://1v1-lol.neocities.org/"];
+    openUrl(getRList(list1v1));
 }
 
 function openOvO() {
@@ -91,7 +95,12 @@ function openFnaf() {
 }
 
 function openJustFall() {
-    openUrl("https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/ReactCasts@a4e6ea73f9e1f60e36fc52c2e092d15dd707d7a0/dropdown/src/justfall.xml&container=ig#EURDXG7V");
+    const listJustFall = ["https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/ReactCasts@a4e6ea73f9e1f60e36fc52c2e092d15dd707d7a0/dropdown/src/justfall.xml&container=ig#EURDXG7V", "https://justfall-lol.neocities.org/"];
+    openUrl(getRList(listJustFall));
+}
+
+function openKrunker() {
+    openUrl("https://mia.browserfps.com/");
 }
 
 function aboutblankembed() {
