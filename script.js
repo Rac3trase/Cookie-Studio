@@ -103,6 +103,10 @@ function openKrunker() {
     openUrl("https://mia.browserfps.com/");
 }
 
+function openMinecraft() {
+    openUrl("https://eaglercraftx.pages.dev/");
+}
+
 function aboutblankembed() {
     var url = prompt("About:blank Embedder", "https://example.com");
 
