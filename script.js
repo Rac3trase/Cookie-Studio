@@ -78,7 +78,8 @@ function openOvO() {
 }
 
 function openFnf() {
-    openUrl("https://foxmoss.com/main/games/fridaynightfunkin/");
+    const listFnf = ["https://foxmoss.com/main/games/fridaynightfunkin/", "https://the.deconstructors.co.uk/tam-friday-night-funkin/"];
+    openUrl(getRList(listFnf));
 }
 
 function openJF() {
