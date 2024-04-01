@@ -1,33 +1,56 @@
 function openUrl(url1) {
     var url = url1;
-    var urlObj = new window.URL(window.location.href);
-    if (url.substring(0, 8) !== "https://" && url.substring(0, 7) !== "http://") {
-        url = "https://" + url.split("https://").pop();
-    } else if (url.substring(0, 7) == "http://") {
-        url = "https://" + url.split("http://").pop();
-    };
 
-    win = window.open();
+    if (url.substring(0, 8) !== "https://" && url.substring(0, 7) !== "http://") {
+        url = "https://" + url;
+    }
+
+    var win = window.open();
+
+    function fullscreenIframe() {
+        if (win.document.querySelector("iframe")) {
+            win.document.querySelector("iframe").requestFullscreen();
+        }
+    }
+
     win.document.body.style.margin = "0";
     win.document.body.style.height = "100vh";
     win.document.title = "Calculator";
+
     var iframe = win.document.createElement("iframe");
     iframe.style.border = "none";
-    iframe.style.width = "100%";
-    iframe.style.height = "100%";
+    iframe.style.width = "100vw";
+    iframe.style.height = "100vh";
     iframe.style.margin = "0";
-    iframe.referrerpolicy = "no-referrer";
-    iframe.allow = "fullscreen";
+    iframe.style.overflow = "hidden";
+    iframe.referrerPolicy = "no-referrer";
+    iframe.allowFullscreen = true;
     iframe.src = url;
 
-    var favi;
-    favi = win.document.createElement('link');
-    favi.rel = 'icon';
-    win.document.head.appendChild(favi);
-
-    favi.href = '/Images/Calculator.png';
+    var favicon = win.document.createElement('link');
+    favicon.rel = 'icon';
+    favicon.href = '/Images/Calculator.png';
+    win.document.head.appendChild(favicon);
 
     win.document.body.appendChild(iframe);
+
+    var button = win.document.createElement('button');
+    button.innerHTML = '&#x26F6;';
+    button.style.position = 'fixed';
+    button.style.top = '20px';
+    button.style.right = '20px';
+    button.style.backgroundColor = '#333';
+    button.style.backgroundSize = '1px 1px'; // 1x1 block background
+    button.style.color = '#fff';
+    button.style.border = 'none';
+    button.style.padding = '10px 20px';
+    button.style.fontSize = '16px';
+    button.style.cursor = 'pointer';
+    button.style.zIndex = '9999';
+
+    button.addEventListener('click', fullscreenIframe);
+
+    win.document.body.appendChild(button);
 }
 
 function getRList(list1) {
@@ -154,8 +177,4 @@ function getCookie(cName) {
         if (val.indexOf(name) === 0) res = val.substring(name.length);
     })
     return res;
-}
-
-function fullscreenIframe() {
-    document.body.querySelector("Iframe").requestFullscreen();
 }
