@@ -46,12 +46,23 @@ function openUrl(url1) {
     button.style.padding = '10px 20px';
     button.style.fontSize = '16px';
     button.style.cursor = 'pointer';
-    button.style.zIndex = '9999';
+    button.style.zIndex = '2';
+    button.style.borderRadius = '10px';
 
     button.addEventListener('click', fullscreenIframe);
 
+    // Add animation to the button
+    button.style.transition = 'background-color 0.3s ease';
+    button.addEventListener('mouseenter', function () {
+        button.style.backgroundColor = '#555';
+    });
+    button.addEventListener('mouseleave', function () {
+        button.style.backgroundColor = '#333';
+    });
+
     win.document.body.appendChild(button);
 }
+
 
 function getRList(list1) {
     return list1[Math.floor(Math.random() * list1.length)];
@@ -69,8 +80,7 @@ function openUnblock() {
 }
 
 function open1v1() {
-    const list1v1 = ["https://foxmoss.com/main/games/1v1lol/", "https://1v1-lol.neocities.org/"];
-    openUrl(getRList(list1v1));
+    openUrl("https://foxmoss.com/main/games/1v1lol/")
 }
 
 function openOvO() {
@@ -78,8 +88,7 @@ function openOvO() {
 }
 
 function openFnf() {
-    const listFnf = ["https://foxmoss.com/main/games/fridaynightfunkin/", "https://the.deconstructors.co.uk/tam-friday-night-funkin/"];
-    openUrl(getRList(listFnf));
+    openUrl("https://foxmoss.com/main/games/fridaynightfunkin/")
 }
 
 function openJF() {
@@ -119,8 +128,7 @@ function openFnaf() {
 }
 
 function openJustFall() {
-    const listJustFall = ["https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/ReactCasts@a4e6ea73f9e1f60e36fc52c2e092d15dd707d7a0/dropdown/src/justfall.xml&container=ig#EURDXG7V", "https://justfall-lol.neocities.org/"];
-    openUrl(getRList(listJustFall));
+    openUrl("https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/ReactCasts@a4e6ea73f9e1f60e36fc52c2e092d15dd707d7a0/dropdown/src/justfall.xml&container=ig#EURDXG7V")
 }
 
 function openKrunker() {
