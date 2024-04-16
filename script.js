@@ -9,7 +9,7 @@ function openUrl(url1) {
 
     win.document.body.style.margin = "0";
     win.document.body.style.height = "100vh";
-    win.document.title = "Calculator";
+    win.document.title = "Home";
 
     var iframe = win.document.createElement("iframe");
     iframe.style.border = "none";
@@ -23,7 +23,7 @@ function openUrl(url1) {
 
     var favicon = win.document.createElement('link');
     favicon.rel = 'icon';
-    favicon.href = '/Images/Calculator.png';
+    favicon.href = '/Images/GoogleClassrom.svg';
     win.document.head.appendChild(favicon);
 
     win.document.body.appendChild(iframe);

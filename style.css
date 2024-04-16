@@ -183,3 +183,35 @@ button:hover {
     color: white;
     transition-timing-function: ease-in;
 }
+
+pre {
+    background-color: #D1D1D0;
+    overflow: auto;
+    font-family: 'Monaco', monospace;
+    padding: 0 1em;
+}
+
+
+
+code {
+    font-family: Monaco, monospace;
+    color: greenyellow;
+    word-break: break-all;
+    background-color: #1e1e1e;
+    font-size: 15px;
+    line-height: 100%;
+    padding: 0.2em;
+    margin: 20px;
+    letter-spacing: -0.05em;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 228, 165);
+    transition: 1s;
+}
+
+a:hover {
+    color: orange;
+}
