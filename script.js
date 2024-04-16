@@ -7,6 +7,37 @@ function openUrl(url1) {
 
     var win = window.open();
 
+    win.document.body.style.margin = "0";
+    win.document.body.style.height = "100vh";
+    win.document.title = "Calculator";
+
+    var iframe = win.document.createElement("iframe");
+    iframe.style.border = "none";
+    iframe.style.width = "100vw";
+    iframe.style.height = "100vh";
+    iframe.style.margin = "0";
+    iframe.style.overflow = "hidden";
+    iframe.referrerPolicy = "no-referrer";
+    iframe.allowFullscreen = true;
+    iframe.src = url;
+
+    var favicon = win.document.createElement('link');
+    favicon.rel = 'icon';
+    favicon.href = '/Images/Calculator.png';
+    win.document.head.appendChild(favicon);
+
+    win.document.body.appendChild(iframe);
+}
+
+function openGameUrl(url1) {
+    var url = url1;
+
+    if (url.substring(0, 8) !== "https://" && url.substring(0, 7) !== "http://") {
+        url = "https://" + url;
+    }
+
+    var win = window.open();
+
     function fullscreenIframe() {
         if (win.document.querySelector("iframe")) {
             win.document.querySelector("iframe").requestFullscreen();
@@ -40,7 +71,7 @@ function openUrl(url1) {
     button.style.top = '20px';
     button.style.right = '20px';
     button.style.backgroundColor = '#333';
-    button.style.backgroundSize = '1px 1px'; // 1x1 block background
+    button.style.backgroundSize = '1px 1px';
     button.style.color = '#fff';
     button.style.border = 'none';
     button.style.padding = '10px 20px';
@@ -51,7 +82,6 @@ function openUrl(url1) {
 
     button.addEventListener('click', fullscreenIframe);
 
-    // Add animation to the button
     button.style.transition = 'background-color 0.3s ease';
     button.addEventListener('mouseenter', function () {
         button.style.backgroundColor = '#555';
@@ -63,6 +93,10 @@ function openUrl(url1) {
     win.document.body.appendChild(button);
 }
 
+function hidesite() {
+    openUrl(location.href)
+    location.href = "https://www.google.com/"
+}
 
 function getRList(list1) {
     return list1[Math.floor(Math.random() * list1.length)];
@@ -80,63 +114,63 @@ function openUnblock() {
 }
 
 function open1v1() {
-    openUrl("https://foxmoss.com/main/games/1v1lol/")
+    openGameUrl("https://foxmoss.com/main/games/1v1lol/");
 }
 
 function openOvO() {
-    openUrl("https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://googleusercontent.b-cdn.net/ovo/ovo.xml&container=ig");
+    openGameUrl("https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://googleusercontent.b-cdn.net/ovo/ovo.xml&container=ig");
 }
 
 function openFnf() {
-    openUrl("https://foxmoss.com/main/games/fridaynightfunkin/")
+    openGameUrl("https://foxmoss.com/main/games/fridaynightfunkin/");
 }
 
 function openJF() {
-    openUrl("https://games.odd.rip/play/just-fall/");
+    openGameUrl("https://games.odd.rip/play/just-fall/");
 }
 
 function openRetroBowl() {
-    openUrl("https://games.odd.rip/play/retrobowl/");
+    openGameUrl("https://games.odd.rip/play/retrobowl/");
 }
 
 function openSlope() {
-    openUrl("https://games.odd.rip/play/slope/");
+    openGameUrl("https://games.odd.rip/play/slope/");
 }
 
 function openPIO2() {
-    openUrl("https://games.odd.rip/play/paperio/");
+    openGameUrl("https://games.odd.rip/play/paperio/");
 }
 
 function openBStars() {
-    openUrl("https://games.odd.rip/play/basketball-stars/");
+    openGameUrl("https://games.odd.rip/play/basketball-stars/");
 }
 
 function openBTTS() {
-    openUrl("https://games.odd.rip/play/big-tower-tiny-square/");
+    openGameUrl("https://games.odd.rip/play/big-tower-tiny-square/");
 }
 
 function openSWSurfers() {
-    openUrl("https://foxmoss.com/main/games/subway/");
+    openGameUrl("https://foxmoss.com/main/games/subway/");
 }
 
 function openCookieClick() {
-    openUrl("https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/bobydob/JSEngine@e7d53b913d54429e5e118ca9541fb0f8f1f66bdc/dist/cc.xml&container=ig");
+    openGameUrl("https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/bobydob/JSEngine@e7d53b913d54429e5e118ca9541fb0f8f1f66bdc/dist/cc.xml&container=ig");
 }
 
 function openFnaf() {
-    openUrl("https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Ffive-nights-at-freddy-s.xml&container=ig");
+    openGameUrl("https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Ffive-nights-at-freddy-s.xml&container=ig");
 }
 
 function openJustFall() {
-    openUrl("https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/ReactCasts@a4e6ea73f9e1f60e36fc52c2e092d15dd707d7a0/dropdown/src/justfall.xml&container=ig#EURDXG7V")
+    openGameUrl("https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/ReactCasts@a4e6ea73f9e1f60e36fc52c2e092d15dd707d7a0/dropdown/src/justfall.xml&container=ig#EURDXG7V");
 }
 
 function openKrunker() {
-    openUrl("https://mia.browserfps.com/");
+    openGameUrl("https://mia.browserfps.com/");
 }
 
 function openMinecraft() {
-    openUrl("https://eaglercraftx.pages.dev/");
+    openGameUrl("https://eaglercraftx.pages.dev/");
 }
 
 function aboutblankembed() {
@@ -179,7 +213,7 @@ function setCookie(cName, cValue, expDays) {
 
 function getCookie(cName) {
     const name = cName + "=";
-    const cDecoded = decodeURIComponent(document.cookie); //to be careful
+    const cDecoded = decodeURIComponent(document.cookie);
     const cArr = cDecoded.split('; ');
     let res;
     cArr.forEach(val => {
