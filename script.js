@@ -188,7 +188,7 @@ function openMinecraft() {
 }
 
 function openPArcade() {
-    openGameUrl("https://plexilearcade.xyz/games.html/");
+    openGameUrl("https://plexilearcade.xyz/games.html");
 }
 
 function openSGShack() {
