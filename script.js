@@ -23,7 +23,7 @@ function openUrl(url1) {
 
     var favicon = win.document.createElement('link');
     favicon.rel = 'icon';
-    favicon.href = '/Images/GoogleClassrom.svg';
+    favicon.href = '/Images/GC.svg';
     win.document.head.appendChild(favicon);
 
     win.document.body.appendChild(iframe);
@@ -118,7 +118,7 @@ function openUnblock() {
         "https://gabe-has-motion.freengers.com/",
         "https://ezze.4nets.org/",
         "https://egg.hmbygg.se/"];
-    openUsingSite(getRList(listRH));
+    openUrl(getRList(listRH));
 }
 
 function open1v1() {
@@ -184,7 +184,7 @@ function openMinecraft() {
 function aboutblankembed() {
     var url = prompt("About:blank Embedder", "https://example.com");
 
-    openUsingSite(url);
+    openUrl(url);
 }
 
 function openNav() {
