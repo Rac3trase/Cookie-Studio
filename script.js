@@ -94,7 +94,8 @@ function openGameUrl(url1) {
 }
 
 function openUsingSite(url) {
-    var encoded = btoa(url);
+    var before = encodeURI(url)
+    var encoded = btoa(before);
     var goUrl = "/go.html";
     var lastUrl = goUrl.concat("?", encoded);
     window.location.href = lastUrl;
