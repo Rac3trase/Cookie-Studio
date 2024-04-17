@@ -122,8 +122,9 @@ function openUnblock() {
 }
 
 function openRoblox() {
-    const listBLOX = ["https://websitesball.com/", "https://universityequality.com/"];
-    openGameUrl(getRList(listBLOX));
+    // const listBLOX = ["https://websitesball.com/", "https://universityequality.com/"];
+    // openGameUrl(getRList(listBLOX));
+    alert("At the moment this does not work!")
 }
 
 function open1v1() {
