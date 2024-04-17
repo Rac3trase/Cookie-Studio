@@ -184,7 +184,7 @@ function openMinecraft() {
 function aboutblankembed() {
     var url = prompt("About:blank Embedder", "https://example.com");
 
-    openUrl(url)
+    openUsingSite(url);
 }
 
 function openNav() {
