@@ -181,6 +181,22 @@ function openMinecraft() {
     openGameUrl("https://eaglercraftx.pages.dev/");
 }
 
+function openPArcade() {
+    openGameUrl("https://plexilearcade.xyz/games.html/");
+}
+
+function openSGShack() {
+    openGameUrl("https://syce-game-shack.vercel.app/");
+}
+
+function openBlockpost() {
+    openGameUrl("https://ikatchelo.github.io/blockpost/");
+}
+
+function openPolyTrack() {
+    openGameUrl("https://www.kodub.com/apps/polytrack/");
+}
+
 function aboutblankembed() {
     var url = prompt("About:blank Embedder", "https://example.com");
 
