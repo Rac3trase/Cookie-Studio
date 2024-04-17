@@ -23,7 +23,7 @@ function openUrl(url1) {
 
     var favicon = win.document.createElement('link');
     favicon.rel = 'icon';
-    favicon.href = '/Images/GC.svg';
+    favicon.href = '/Images/GC.png';
     win.document.head.appendChild(favicon);
 
     win.document.body.appendChild(iframe);
@@ -194,7 +194,7 @@ function openBlockpost() {
 }
 
 function openPolyTrack() {
-    openGameUrl("https://www.kodub.com/apps/polytrack/");
+    openGameUrl("https://www.kodub.com/apps/polytrack");
 }
 
 function aboutblankembed() {
