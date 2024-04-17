@@ -20,8 +20,9 @@
 <script>
     function load(url) {
         var base64 = url;
-        var decoded = atob(base64);
-        var finished = decoded.replace("?", "");
+        var base64TRUE = base64.replace("?", "");
+        var decoded = atob(base64TRUE);
+        return decoded;
     }
 
     function go() {
