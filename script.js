@@ -121,6 +121,11 @@ function openUnblock() {
     openUrl(getRList(listRH));
 }
 
+function openRoblox() {
+    const listBLOX = ["https://websitesball.com/", "https://universityequality.com/"];
+    openGameUrl(getRList(listBLOX));
+}
+
 function open1v1() {
     openGameUrl("https://foxmoss.com/main/games/1v1lol/");
 }
@@ -190,7 +195,7 @@ function openSGShack() {
 }
 
 function openBlockpost() {
-    openGameUrl("https://ikatchelo.github.io/blockpost/");
+    openGameUrl("https://ikatchelo.github.io/blockpost");
 }
 
 function openPolyTrack() {
