@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Studio</title>
+    <link rel="shortcut icon" type="image/x-icon" href="Images/favicon.ico">
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <h1>Opening Url...</h1>
+</body>
+
+</html>
+
+<script>
+    function load(url) {
+        var base64 = url;
+        var decoded = atob(base64);
+        var finished = decoded.replace("?", "");
+    }
+
+    function go() {
+        var url = load(window.location.search);
+        openUrl(url);
+    }
+
+    go()
+</script>
+
+<style>
+    html {
+        background-color: white;
+    }
+
+    body {
+        background-color: white;
+        color: black;
+    }
+</style>

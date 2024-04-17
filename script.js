@@ -93,9 +93,16 @@ function openGameUrl(url1) {
     win.document.body.appendChild(button);
 }
 
+function openUsingSite(url) {
+    var encoded = btoa(url)
+    var goUrl = (window.location.hostname).concat("/go.html")
+    var lastUrl = goUrl.concat("?", encoded)
+    window.location.href = lastUrl
+}
+
 function hidesite() {
     openUrl(location.href)
-    location.href = "https://www.google.com/"
+    window.location.href = "https://www.google.com/"
 }
 
 function getRList(list1) {
