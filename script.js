@@ -118,7 +118,7 @@ function openUnblock() {
         "https://gabe-has-motion.freengers.com/",
         "https://ezze.4nets.org/",
         "https://egg.hmbygg.se/"];
-    openUrl(getRList(listRH));
+    openUsingSite(getRList(listRH));
 }
 
 function open1v1() {
