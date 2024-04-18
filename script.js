@@ -135,6 +135,10 @@ function openOvO() {
     openGameUrl("https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://googleusercontent.b-cdn.net/ovo/ovo.xml&container=ig");
 }
 
+function openMathGames() {
+    openUrl("https://mathgames66.web.app/");
+}
+
 function openFnf() {
     openGameUrl("https://foxmoss.com/main/games/fridaynightfunkin/");
 }
