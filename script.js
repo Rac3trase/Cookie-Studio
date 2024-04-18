@@ -312,14 +312,3 @@ function stopCopyMe() {
     debugger;
     clear(console);
 }
-
-do {
-    var devtools = function () { };
-    devtools.toString = function () {
-        if (!this.opened) {
-            stopCopyMe()
-        }
-        this.opened = true;
-    }
-}
-while (true);
