@@ -187,6 +187,10 @@ function openMinecraft() {
     openGameUrl("https://eaglercraftx.pages.dev/");
 }
 
+function openMinecraftPClient() {
+    openGameUrl("https://mackeylol.github.io/copyofmasite/eagleronline/index.html");
+}
+
 function openPArcade() {
     openGameUrl("https://plexilearcade.xyz/games.html");
 }
@@ -201,6 +205,58 @@ function openBlockpost() {
 
 function openPolyTrack() {
     openGameUrl("https://www.kodub.com/apps/polytrack");
+}
+
+function openCrossyroads() {
+    openGameUrl("https://mackeylol.github.io/copyofmasite/Games/crossyroad/index.html");
+}
+
+function openDriveMad() {
+    openGameUrl("https://mackeylol.github.io/copyofmasite/Games/DriveMad/index.html");
+}
+
+function openOsu() {
+    openGameUrl("https://mackeylol.github.io/copyofmasite/Games/webosu/webosu-main/index.html");
+}
+
+function openTLOZ() {
+    openGameUrl("https://mackeylol.github.io/copyofmasite/Games/emu/SNES/legend-of-zelda-link-to-the-past/index.html");
+}
+
+function openSA1() {
+    openGameUrl("https://mackeylol.github.io/copyofmasite/Games/emu/GBA/sonic-advance/index.html");
+}
+
+function openSA2() {
+    openGameUrl("https://mackeylol.github.io/copyofmasite/Games/emu/GBA/sonic-advance-2/index.html");
+}
+
+function openUnblockedGoogle() {
+    openUrl("https://artclass.site/service/hvtrs8%2F-wuw%2Cgmoelg.aoo%2F%3Dscfg%3Dccvite%24squk%3Dmn");
+}
+
+function openWindows11Remake() {
+    openGameUrl("https://artclass.site/service/hvtrs8%2F-wkn31%2Cbnugefgg.oe-");
+}
+
+function openGbaEmulator() {
+    openUrl("https://cattn.github.io/gba/gba.html");
+}
+
+function openWhiteSpider() {
+    openUrl("https://whitespider.dev/");
+}
+
+function openRailin() {
+    openUrl("https://railin.hypverr.xyz/");
+}
+
+function openPHProxy() {
+    openUrl("https://www.rateavon.je/error.php");
+}
+
+function openClockwork() {
+    openUrl(window.location.origin.concat("/Projects/clockwork.html"));
 }
 
 function aboutblankembed() {
