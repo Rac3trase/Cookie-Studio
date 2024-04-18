@@ -255,6 +255,10 @@ function openPHProxy() {
     openUrl("https://www.rateavon.je/error.php");
 }
 
+function openHistorySpot() {
+    openUrl("https://historyspot.com/activities/");
+}
+
 function openClockwork() {
     openUrl(window.location.origin.concat("/Projects/clockwork.html"));
 }
