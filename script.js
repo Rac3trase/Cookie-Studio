@@ -192,11 +192,11 @@ function openMinecraftPClient() {
 }
 
 function openPArcade() {
-    openGameUrl("https://plexilearcade.xyz/games.html");
+    openUrl("https://plexilearcade.xyz/games.html");
 }
 
 function openSGShack() {
-    openGameUrl("https://syce-game-shack.vercel.app/");
+    openUrl("https://syce-game-shack.vercel.app/");
 }
 
 function openBlockpost() {
