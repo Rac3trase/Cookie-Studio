@@ -309,6 +309,6 @@ function getCookie(cName) {
 }
 
 function stopCopyMe() {
-    debugger;
-    clear(console);
+    eval("debugger");
+    console.clear();
 }
