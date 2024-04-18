@@ -268,11 +268,3 @@ h1:hover {
     color: rgb(255, 237, 203);
 }
 
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
