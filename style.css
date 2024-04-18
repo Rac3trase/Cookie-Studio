@@ -137,16 +137,20 @@ button:hover {
     padding: 20px;
     text-align: center;
     text-wrap: wrap;
-    background-color: white;
-    color: black;
+    background-color: #1e1e1e;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     transition: 1s;
     border-radius: 10px;
 }
 
 .card:hover {
-    transition: 0.35s;
-    background-color: lightslategrey;
+    background-color: rgb(213, 150, 61);
+    scale: 1.01;
+    color: black;
+    outline-color: transparent;
+    transition-timing-function: linear;
+    transition: 0.35;
 }
 
 @media screen and (max-width: 700px) {

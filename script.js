@@ -291,10 +291,10 @@ function openNavAfter() {
 
 function niceButton() {
     Swal.fire({
-        title: 'wow!',
+        title: 'Notification',
         text: 'Very Cool',
         icon: 'success',
-        confirmButtonText: 'Click...'
+        confirmButtonText: 'Ok'
     })
 }
 
