@@ -266,7 +266,7 @@ h1 {
 }
 
 h1:hover {
-    color: orange;
+    color: rgb(255, 237, 203);
     cursor: pointer;
 }
 
