@@ -322,5 +322,5 @@ function stopCopyMe() {
 }
 
 function openKour() {
-    openUrl("https://kour.io/")
+    openGameUrl("https://kour.io/");
 }
