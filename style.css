@@ -63,6 +63,21 @@ body {
     scale: 1.05;
 }
 
+.sidepanel div {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    margin-top: 50%;
+}
+
+.sidepanel div:hover {
+    color: white;
+    scale: 1.02;
+}
 
 button {
     background-color: black;
