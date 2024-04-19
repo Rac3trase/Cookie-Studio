@@ -19,7 +19,5 @@ function openDoge() {
 }
 
 function openClockworkNEW() {
-    var win = window.open("", "_blank", "popup=yes"); 
-    win.location.origin = 'https://google.com'; 
-    win.document.write(`<!DOCTYPE html>  <html>  <body>  <iframe src="${atob('aHR0cHM6Ly9jbG9ja3dvcmstYXNoeS52ZXJjZWwuYXBwL29zLw==')}"></iframe>  <style>* {margin: 0;padding: 0;overflow-y: hidden;}iframe {width: 100%;height: 100vh;border: none;}</style>  </body>  </html>`);
+    openUrl("https://clockwork-snowy.vercel.app/os");
 }
