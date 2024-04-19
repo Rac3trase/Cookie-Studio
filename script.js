@@ -320,3 +320,7 @@ function stopCopyMe() {
     eval("debugger");
     console.clear();
 }
+
+function openKour() {
+    openUrl("https://kour.io/")
+}
