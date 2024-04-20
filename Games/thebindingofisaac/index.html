@@ -1,31 +1,56 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>The Binding of Isaac</title>
-        <script src="/Games/v1/v1-main/ruffle/ruffle.js"></script>
-        <!--Google Analytics-->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9KJ1XPKLF"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
 
-            gtag('config', 'G-M9KJ1XPKLF');
-        </script>
-        <!--Google Analytics-->
-    </head>
-    <body>
-        <div style="margin:0 auto;text-align:center">
-            <embed src="/Games/v1/v1-main/games/thebindingofisaac/thebindingofisaac.swf" width="1000" height="800"></embed>
-            <div style="margin-left:auto;margin-right:auto;text-align:center">
-          </div>
+<head>
+    <title>The Binding of Isaac</title>
+    <script src="/Games/v1/v1-main/ruffle/ruffle.js"></script>
+    <!--Google Analytics-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9KJ1XPKLF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-M9KJ1XPKLF');
+    </script>
+    <!--Google Analytics-->
+</head>
+
+<body>
+    <div id="PLAYGAME" style="margin:0 auto;text-align:center">
+        <embed src="/Games/v1/v1-main/games/thebindingofisaac/thebindingofisaac.swf" width="1000" height="800"></embed>
+        <div style="margin-left:auto;margin-right:auto;text-align:center">
         </div>
+    </div>
 
-        <!--Skin Ad-->
-		<script>
-			var afg={};afg.u=6328;afg.s=21;
-			afg.centerWidth=1000; /* Adjust by Game Resolution */
-			afg.topPos=0;
-		</script>
-    </body>
+    <button onclick="fullscreen()">&#x26F6;</button>
+
+    <script>
+        function fullscreen() {
+            if (document.getElementById("PLAYGAME").requestFullscreen()) {
+                document.getElementById("PLAYGAME").requestFullscreen()
+            }
+        }
+    </script>
+    <style>
+        button {
+            color: rgb(200, 200, 200);
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            right: 0;
+            font-size: 35px;
+            border-radius: 10px;
+            transition: 1s;
+        }
+
+        button:hover {
+            color: white;
+            background-color: #444;
+            cursor: pointer;
+            border-radius: 25px;
+        }
+    </style>
+</body>
+
 </html>
