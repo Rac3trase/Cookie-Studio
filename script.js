@@ -268,9 +268,11 @@ function openClockwork() {
 }
 
 function aboutblankembed() {
-    var url = window.prompt("About:blank Embedder", "https://example.com");
+    var url = window.prompt("About:blank Embedder", "https://example.com/");
 
     openUrl(url);
+
+    window.alert("Opened about:blank in new tab!");
 }
 
 function openNav() {
@@ -338,14 +340,10 @@ function getRedirect(url) {
 }
 
 function createRedirect() {
-    var url = window.prompt("Make a redirect url! \nWrite the url you would like to make a redirect for!", "https://example.com/");
+    var url = window.prompt("Redirect Url Maker", "https://example.com/");
 
     let x = getRedirect(url);
-    var confirm = window.confirm("Your redirect url is ready! \nOpen the view in a new tab?");
+    window.alert("Your redirect url is ready!");
 
-    if (confirm==true) {
-        window.open(x);
-    } else {
-        window.alert("Ok!");
-    }
+    window.location.href = x;
 }

@@ -218,17 +218,22 @@ pre {
 
 
 
-code {
+coolbox {
     font-family: Monaco, monospace;
     color: greenyellow;
     word-break: break-all;
     background-color: #1e1e1e;
     font-size: 15px;
     line-height: 100%;
-    padding: 0.2em;
-    margin: 20px;
+    padding: 10px;
+    margin: 10px;
     letter-spacing: -0.05em;
     border-radius: 5px;
+    transition: 1s;
+}
+
+coolbox:hover {
+    color: lightblue;
 }
 
 a {
@@ -293,4 +298,9 @@ h1:hover {
     100% {
         opacity: 1;
     }
+}
+
+.NEW {
+    color: red;
+    padding-left: 10px;
 }
