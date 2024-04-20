@@ -340,10 +340,6 @@ function getRedirect(url) {
 function createRedirect() {
     var url = window.prompt("Make a redirect url! \nWrite the url you would like to make a redirect for!", "https://example.com/");
 
-    if (url.substring(0, 8) !== "https://" && url.substring(0, 7) !== "http://") {
-        url = "https://" + url;
-    }
-
     let x = getRedirect(url);
     var confirm = window.confirm("Your redirect url is ready! \nOpen the view in a new tab?");
 
