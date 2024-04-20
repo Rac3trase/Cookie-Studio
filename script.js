@@ -124,7 +124,7 @@ function openUnblock() {
 function openRoblox() {
     // const listBLOX = ["https://websitesball.com/", "https://universityequality.com/"];
     // openGameUrl(getRList(listBLOX));
-    alert("At the moment this does not work!")
+    window.alert("At the moment this does not work!");
 }
 
 function open1v1() {
@@ -268,7 +268,7 @@ function openClockwork() {
 }
 
 function aboutblankembed() {
-    var url = prompt("About:blank Embedder", "https://example.com");
+    var url = window.prompt("About:blank Embedder", "https://example.com");
 
     openUrl(url);
 }
@@ -323,4 +323,33 @@ function stopCopyMe() {
 
 function openKour() {
     openGameUrl("https://kour.io/");
+}
+
+function redirect(url) {
+    let encoded = btoa(url);
+    let newUrl = window.location.origin.concat("/redirect.html?", encoded);
+    window.location.href = newUrl;
+}
+
+function getRedirect(url) {
+    let encoded = encodeURI(url);
+    let newUrl = window.location.origin.concat("/gRedirect.html?", encoded);
+    return newUrl;
+}
+
+function createRedirect() {
+    var url = window.prompt("Make a redirect url! \nWrite the url you would like to make a redirect for!", "https://example.com/");
+
+    if (url.substring(0, 8) !== "https://" && url.substring(0, 7) !== "http://") {
+        url = "https://" + url;
+    }
+
+    let x = getRedirect(url);
+    var confirm = window.confirm("Your redirect url is ready! \nOpen the view in a new tab?");
+
+    if (confirm==true) {
+        window.open(x);
+    } else {
+        window.alert("Ok!");
+    }
 }

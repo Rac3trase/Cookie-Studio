@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Studio</title>
+    <link rel="shortcut icon" type="image/x-icon" href="Images/favicon.ico">
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <div class="stars"></div>
+</head>
+
+<body>
+    <h1>Redirecting you...</h1>
+    <p>This could take a minute!</p>
+</body>
+
+</html>
+
+<script>
+    function load(url) {
+        var base64 = url;
+        var base64TRUE = base64.replace("?", "");
+        var decoded = atob(base64TRUE);
+        return decoded;
+    }
+
+    function go() {
+        var url = load(window.location.search);
+        window.location.href = url;
+    }
+
+    window.onload = function(){
+        go();
+    }
+</script>

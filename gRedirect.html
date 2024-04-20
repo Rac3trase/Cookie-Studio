@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Studio</title>
+    <link rel="shortcut icon" type="image/x-icon" href="Images/favicon.ico">
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <div class="stars"></div>
+</head>
+
+<body>
+    <h1 id="text">Getting Url... This could take a minute!</h1>
+    <a id="link" href="">Loading...</a>
+</body>
+
+</html>
+
+<script>
+    function load(url) {
+        var finish = url.replace("?", "");
+
+        return finish;
+    }
+
+    function start() {
+        let url = load(window.location.search);
+        let a = document.getElementById("text");
+        let b = document.getElementById("link");
+        let redirectUrl = makeRedirectUrl(url);
+
+        a.innerHTML = "Your redirect url is... ";
+        b.innerHTML = redirectUrl;
+        b.href = redirectUrl;
+    }
+
+    window.onload = function () {
+        start();
+    }
+
+
+    function makeRedirectUrl(url) {
+        let encoded = btoa(url);
+        let newUrl = window.location.origin.concat("/redirect.html?", encoded);
+        return newUrl;
+    }
+</script>
