@@ -17,7 +17,3 @@ function openDoge() {
     const list = ["https://doge-theta-five.vercel.app/"];
     openUrl(getRList(list));
 }
-
-function openClockworkNEW() {
-    openUrl("https://clockwork-snowy.vercel.app/os");
-}

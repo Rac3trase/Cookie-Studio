@@ -71,7 +71,8 @@ body {
     display: block;
     transition: 0.3s;
     transition-timing-function: ease-in-out;
-    margin-top: 50%;
+    margin-top: 50px;
+    overflow-y: auto;
 }
 
 .sidepanel div:hover {
