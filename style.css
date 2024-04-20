@@ -131,7 +131,6 @@ button:hover {
     background-color: rgb(213, 150, 61);
     scale: 1.1;
     color: black;
-    outline-color: transparent;
     transition-timing-function: linear;
     transition: 0.35;
 }
