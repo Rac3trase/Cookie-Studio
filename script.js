@@ -93,14 +93,6 @@ function openGameUrl(url1) {
     win.document.body.appendChild(button);
 }
 
-function openUsingSite(url) {
-    var before = encodeURI(url)
-    var encoded = btoa(before);
-    var goUrl = "/go.html";
-    var lastUrl = goUrl.concat("?", encoded);
-    window.location.href = lastUrl;
-}
-
 function hidesite() {
     openUrl(location.href);
     window.location.href = "https://www.google.com/";
@@ -129,6 +121,14 @@ function openRoblox() {
 
 function open1v1() {
     openGameUrl("https://foxmoss.com/main/games/1v1lol/");
+}
+
+function openLA() {
+    openGameUrl("https://littlealchemy2.com/");
+}
+
+function open3kh0LITE() {
+    openGameUrl("https://lite.3kh0.net/");
 }
 
 function openOvO() {
