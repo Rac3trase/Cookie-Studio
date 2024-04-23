@@ -347,3 +347,55 @@ function createRedirect() {
 
     window.location.href = x;
 }
+
+function openDrawClimber() {
+    openGameUrl("https://7903268640135286897.playables.usercontent.goog/v/assets/index.html");
+}
+
+function openTurboStars() {
+    openGameUrl("https://18019474611718321857.playables.usercontent.goog/v/assets/index.html");
+}
+
+function openTomboftheMask() {
+    openGameUrl("https://16674314618080373332.playables.usercontent.goog/v/assets/index.html");
+}
+
+function openHurdle() {
+    openGameUrl("https://3395323266096095090.playables.usercontent.goog/v/assets/index.html");
+}
+
+function openCoolStickGame() {
+    openGameUrl("https://6149939928648581345.playables.usercontent.goog/v/assets/index.html");
+}
+
+function openSuperGoal() {
+    openGameUrl("https://7321074945596286303.playables.usercontent.goog/v/assets/index.html");
+}
+
+function openCutTheRope() {
+    openGameUrl("https://3517975602511114666.playables.usercontent.goog/v/assets/index.html");
+}
+
+function openCuttingGame() {
+    openGameUrl("https://9809694426208871092.playables.usercontent.goog/v/assets/index.html");
+}
+
+function openEhShootingGame() {
+    openGameUrl("https://18237275162947857704.playables.usercontent.goog/v/assets/index.html");
+}
+
+function openCannonBalls3D() {
+    openGameUrl("https://14726002176993811037.playables.usercontent.goog/v/assets/index.html");
+}
+
+function openAmaze() {
+    openGameUrl("https://580820627722902829.playables.usercontent.goog/v/assets/index.html");
+}
+
+function openBasketballGame() {
+    openGameUrl("https://9767097481895572796.playables.usercontent.goog/v/assets/index.html");
+}
+
+function openAngryBirds() {
+    openGameUrl("https://6381249690777614785.playables.usercontent.goog/v/assets/index.html");
+}
