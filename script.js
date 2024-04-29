@@ -95,180 +95,15 @@ function openGameUrl(url1) {
 
 function hidesite() {
     openUrl(location.href);
-    window.location.href = "https://www.google.com/";
+    window.location.href = "https://www.google.com";
 }
 
 function getRList(list1) {
     return list1[Math.floor(Math.random() * list1.length)];
 }
 
-function openUnblock() {
-    const listRH = ["https://house.hec.to/",
-        "https://yhtjygh.haleymonroe.com/",
-        "https://ujymh.hktrustco.hk/",
-        "https://ty5hrtng.simonmonroe.com/",
-        "https://gabe-has-motion.freengers.com/",
-        "https://ezze.4nets.org/",
-        "https://egg.hmbygg.se/"];
-    openUrl(getRList(listRH));
-}
-
-function openRoblox() {
-    // const listBLOX = ["https://websitesball.com/", "https://universityequality.com/"];
-    // openGameUrl(getRList(listBLOX));
-    window.alert("At the moment this does not work!");
-}
-
-function open1v1() {
-    openGameUrl("https://foxmoss.com/main/games/1v1lol/");
-}
-
-function openLA() {
-    openGameUrl("https://littlealchemy2.com/");
-}
-
-function open3kh0LITE() {
-    openGameUrl("https://lite.3kh0.net/");
-}
-
-function openOvO() {
-    openGameUrl("https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://googleusercontent.b-cdn.net/ovo/ovo.xml&container=ig");
-}
-
-function openMathGames() {
-    openUrl("https://mathgames66.web.app/");
-}
-
-function openFnf() {
-    openGameUrl("https://foxmoss.com/main/games/fridaynightfunkin/");
-}
-
-function openJF() {
-    openGameUrl("https://games.odd.rip/play/just-fall/");
-}
-
-function openRetroBowl() {
-    openGameUrl("https://games.odd.rip/play/retrobowl/");
-}
-
-function openSlope() {
-    openGameUrl("https://games.odd.rip/play/slope/");
-}
-
-function openPIO2() {
-    openGameUrl("https://games.odd.rip/play/paperio/");
-}
-
-function openBStars() {
-    openGameUrl("https://games.odd.rip/play/basketball-stars/");
-}
-
-function openBTTS() {
-    openGameUrl("https://games.odd.rip/play/big-tower-tiny-square/");
-}
-
-function openSWSurfers() {
-    openGameUrl("https://foxmoss.com/main/games/subway/");
-}
-
-function openCookieClick() {
-    openGameUrl("https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/bobydob/JSEngine@e7d53b913d54429e5e118ca9541fb0f8f1f66bdc/dist/cc.xml&container=ig");
-}
-
-function openFnaf() {
-    openGameUrl("https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Ffive-nights-at-freddy-s.xml&container=ig");
-}
-
-function openJustFall() {
-    openGameUrl("https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/ReactCasts@a4e6ea73f9e1f60e36fc52c2e092d15dd707d7a0/dropdown/src/justfall.xml&container=ig#EURDXG7V");
-}
-
-function openKrunker() {
-    openGameUrl("https://mia.browserfps.com/");
-}
-
-function openMinecraft() {
-    openGameUrl("https://eaglercraftx.pages.dev/");
-}
-
-function openMinecraftPClient() {
-    openGameUrl("https://mackeylol.github.io/copyofmasite/eagleronline/index.html");
-}
-
-function openPArcade() {
-    openUrl("https://plexilearcade.xyz/games.html");
-}
-
-function openSGShack() {
-    openUrl("https://syce-game-shack.vercel.app/");
-}
-
-function openBlockpost() {
-    openGameUrl("https://ikatchelo.github.io/blockpost");
-}
-
-function openPolyTrack() {
-    openGameUrl("https://www.kodub.com/apps/polytrack");
-}
-
-function openCrossyroads() {
-    openGameUrl("https://mackeylol.github.io/copyofmasite/Games/crossyroad/index.html");
-}
-
-function openDriveMad() {
-    openGameUrl("https://mackeylol.github.io/copyofmasite/Games/DriveMad/index.html");
-}
-
-function openOsu() {
-    openGameUrl("https://mackeylol.github.io/copyofmasite/Games/webosu/webosu-main/index.html");
-}
-
-function openTLOZ() {
-    openGameUrl("https://mackeylol.github.io/copyofmasite/Games/emu/SNES/legend-of-zelda-link-to-the-past/index.html");
-}
-
-function openSA1() {
-    openGameUrl("https://mackeylol.github.io/copyofmasite/Games/emu/GBA/sonic-advance/index.html");
-}
-
-function openSA2() {
-    openGameUrl("https://mackeylol.github.io/copyofmasite/Games/emu/GBA/sonic-advance-2/index.html");
-}
-
-function openUnblockedGoogle() {
-    openUrl("https://artclass.site/service/hvtrs8%2F-wuw%2Cgmoelg.aoo%2F%3Dscfg%3Dccvite%24squk%3Dmn");
-}
-
-function openWindows11Remake() {
-    openGameUrl("https://artclass.site/service/hvtrs8%2F-wkn31%2Cbnugefgg.oe-");
-}
-
-function openGbaEmulator() {
-    openUrl("https://cattn.github.io/gba/gba.html");
-}
-
-function openWhiteSpider() {
-    openUrl("https://whitespider.dev/");
-}
-
-function openRailin() {
-    openUrl("https://railin.hypverr.xyz/");
-}
-
-function openPHProxy() {
-    openUrl("https://www.rateavon.je/error.php");
-}
-
-function openHistorySpot() {
-    openUrl("https://historyspot.com/activities/");
-}
-
-function openClockwork() {
-    openUrl(window.location.origin.concat("/Projects/clockwork.html"));
-}
-
 function aboutblankembed() {
-    var url = window.prompt("About:blank Embedder", "https://example.com/");
+    var url = window.prompt("About:blank Embedder", "https://example.com");
 
     openUrl(url);
 
@@ -323,10 +158,6 @@ function stopCopyMe() {
     console.clear();
 }
 
-function openKour() {
-    openGameUrl("https://kour.io/");
-}
-
 function redirect(url) {
     let encoded = btoa(url);
     let newUrl = window.location.origin.concat("/redirect.html?", encoded);
@@ -340,7 +171,7 @@ function getRedirect(url) {
 }
 
 function createRedirect() {
-    var url = window.prompt("Redirect Url Maker", "https://example.com/");
+    var url = window.prompt("Redirect Url Maker", "https://example.com");
 
     let x = getRedirect(url);
     window.alert("Your redirect url is ready!");
@@ -348,54 +179,193 @@ function createRedirect() {
     window.location.href = x;
 }
 
-function openDrawClimber() {
-    openGameUrl("https://7903268640135286897.playables.usercontent.goog/v/assets/index.html");
+// All the game/proxies/other functions
+
+function openKour() {
+    openGameUrl("https://kour.io");
 }
 
-function openTurboStars() {
-    openGameUrl("https://18019474611718321857.playables.usercontent.goog/v/assets/index.html");
+function openUnblock() {
+    const listRH = ["https://house.hec.to",
+        "https://yhtjygh.haleymonroe.com",
+        "https://ujymh.hktrustco.hk",
+        "https://ty5hrtng.simonmonroe.com",
+        "https://gabe-has-motion.freengers.com",
+        "https://ezze.4nets.org",
+        "https://egg.hmbygg.se"];
+    openUrl(getRList(listRH));
 }
 
-function openTomboftheMask() {
-    openGameUrl("https://16674314618080373332.playables.usercontent.goog/v/assets/index.html");
+function openRoblox() {
+    // const listBLOX = ["https://websitesball.com", "https://universityequality.com"];
+    // openGameUrl(getRList(listBLOX));
+    window.alert("At the moment this does not work!");
 }
 
-function openHurdle() {
-    openGameUrl("https://3395323266096095090.playables.usercontent.goog/v/assets/index.html");
+function open1v1() {
+    openGameUrl("https://foxmoss.com/main/games/1v1lol");
 }
 
-function openCoolStickGame() {
-    openGameUrl("https://6149939928648581345.playables.usercontent.goog/v/assets/index.html");
+function openLA() {
+    openGameUrl("https://littlealchemy2.com");
 }
 
-function openSuperGoal() {
-    openGameUrl("https://7321074945596286303.playables.usercontent.goog/v/assets/index.html");
+function open3kh0LITE() {
+    openGameUrl("https://lite.3kh0.net");
 }
 
-function openCutTheRope() {
-    openGameUrl("https://3517975602511114666.playables.usercontent.goog/v/assets/index.html");
+function openOvO() {
+    openGameUrl("https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://googleusercontent.b-cdn.net/ovo/ovo.xml&container=ig");
 }
 
-function openCuttingGame() {
-    openGameUrl("https://9809694426208871092.playables.usercontent.goog/v/assets/index.html");
+function openMathGames() {
+    openUrl("https://mathgames66.web.app");
 }
 
-function openEhShootingGame() {
-    openGameUrl("https://18237275162947857704.playables.usercontent.goog/v/assets/index.html");
+function openFnf() {
+    openGameUrl("https://foxmoss.com/main/games/fridaynightfunkin");
 }
 
-function openCannonBalls3D() {
-    openGameUrl("https://14726002176993811037.playables.usercontent.goog/v/assets/index.html");
+function openJF() {
+    openGameUrl("https://games.odd.rip/play/just-fall");
 }
 
-function openAmaze() {
-    openGameUrl("https://580820627722902829.playables.usercontent.goog/v/assets/index.html");
+function openRetroBowl() {
+    openGameUrl("https://games.odd.rip/play/retrobowl");
 }
 
-function openBasketballGame() {
-    openGameUrl("https://9767097481895572796.playables.usercontent.goog/v/assets/index.html");
+function openSlope() {
+    openGameUrl("https://games.odd.rip/play/slope");
 }
 
-function openAngryBirds() {
-    openGameUrl("https://6381249690777614785.playables.usercontent.goog/v/assets/index.html");
+function openPIO2() {
+    openGameUrl("https://games.odd.rip/play/paperio");
+}
+
+function openBStars() {
+    openGameUrl("https://games.odd.rip/play/basketball-stars");
+}
+
+function openBTTS() {
+    openGameUrl("https://games.odd.rip/play/big-tower-tiny-square");
+}
+
+function openSWSurfers() {
+    openGameUrl("https://foxmoss.com/main/games/subway");
+}
+
+function openCookieClick() {
+    openGameUrl("https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/bobydob/JSEngine@e7d53b913d54429e5e118ca9541fb0f8f1f66bdc/dist/cc.xml&container=ig");
+}
+
+function openFnaf() {
+    openGameUrl("https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Ffive-nights-at-freddy-s.xml&container=ig");
+}
+
+function openJustFall() {
+    openGameUrl("https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/ReactCasts@a4e6ea73f9e1f60e36fc52c2e092d15dd707d7a0/dropdown/src/justfall.xml&container=ig#EURDXG7V");
+}
+
+function openKrunker() {
+    openGameUrl("https://mia.browserfps.com");
+}
+
+function openMinecraft() {
+    openGameUrl("https://eaglercraftx.pages.dev");
+}
+
+function openMinecraftPClient() {
+    openGameUrl("https://mackeylol.github.io/copyofmasite/eagleronline/index.html");
+}
+
+function openPArcade() {
+    openUrl("https://plexilearcade.xyz/games.html");
+}
+
+function openSGShack() {
+    openUrl("https://syce-game-shack.vercel.app");
+}
+
+function openBlockpost() {
+    openGameUrl("https://ikatchelo.github.io/blockpost");
+}
+
+function openPolyTrack() {
+    openGameUrl("https://www.kodub.com/apps/polytrack");
+}
+
+function openCrossyroads() {
+    openGameUrl("https://mackeylol.github.io/copyofmasite/Games/crossyroad/index.html");
+}
+
+function openDriveMad() {
+    openGameUrl("https://mackeylol.github.io/copyofmasite/Games/DriveMad/index.html");
+}
+
+function openOsu() {
+    openGameUrl("https://mackeylol.github.io/copyofmasite/Games/webosu/webosu-main/index.html");
+}
+
+function openTLOZ() {
+    openGameUrl("https://mackeylol.github.io/copyofmasite/Games/emu/SNES/legend-of-zelda-link-to-the-past/index.html");
+}
+
+function openSA1() {
+    openGameUrl("https://mackeylol.github.io/copyofmasite/Games/emu/GBA/sonic-advance/index.html");
+}
+
+function openSA2() {
+    openGameUrl("https://mackeylol.github.io/copyofmasite/Games/emu/GBA/sonic-advance-2/index.html");
+}
+
+function openUnblockedGoogle() {
+    openUrl("https://artclass.site/service/hvtrs8%2F-wuw%2Cgmoelg.aoo%2F%3Dscfg%3Dccvite%24squk%3Dmn");
+}
+
+function openWindows11Remake() {
+    openGameUrl("https://artclass.site/service/hvtrs8%2F-wkn31%2Cbnugefgg.oe-");
+}
+
+function openGbaEmulator() {
+    openUrl("https://cattn.github.io/gba/gba.html");
+}
+
+function openWhiteSpider() {
+    openUrl("https://whitespider.dev");
+}
+
+function openRailin() {
+    openUrl("https://railin.hypverr.xyz");
+}
+
+function openPHProxy() {
+    openUrl("https://www.rateavon.je/error.php");
+}
+
+function openHistorySpot() {
+    openUrl("https://historyspot.com/activities");
+}
+
+function openClockwork() {
+    openUrl(window.location.origin.concat("/Projects/clockwork.html"));
+}
+
+function open1v1lolNEW() {
+    const list = ["https://buildnow.netlify.app", "https://rac3trase.github.io/1v1.lol", "https://buildnow.glitch.me"];
+    openUrl(getRList(list));
+}
+
+function openjustfallNEW() {
+    const list = ["https://server1-lol.glitch.me", "https://rac3trase.github.io/justfall.lol", "https://justfall-lol.netlify.app"];
+    openUrl(getRList(list));
+}
+
+function openIntersteller() {
+    const list = ["https://interstellar-three-virid.vercel.app"];
+    openUrl(getRList(list));
+}
+
+function openDoge() {
+    const list = ["https://doge-theta-five.vercel.app"];
+    openUrl(getRList(list));
 }
