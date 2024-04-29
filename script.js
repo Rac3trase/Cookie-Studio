@@ -1,3 +1,5 @@
+// Opening About:Blank but with function :D
+
 function openUrl(url1) {
     var url = url1;
 
@@ -93,6 +95,8 @@ function openGameUrl(url1) {
     win.document.body.appendChild(button);
 }
 
+// Cool
+
 function hidesite() {
     openUrl(location.href);
     window.location.href = "https://www.google.com";
@@ -110,6 +114,8 @@ function aboutblankembed() {
     window.alert("Opened about:blank in new tab!");
 }
 
+// Main | DONT TOUCH UNLESS U KNOW WHAT U DOING!
+
 function openNav() {
     if (document.getElementById("mySidepanel").style.width != "250px") {
         openNavAfter();
@@ -126,6 +132,8 @@ function openNavAfter() {
     document.getElementById("mySidepanel").style.width = "250px";
 }
 
+// Button Examples
+
 function niceButton() {
     Swal.fire({
         title: 'Notification',
@@ -134,6 +142,8 @@ function niceButton() {
         confirmButtonText: 'Ok'
     })
 }
+
+// Cookies
 
 function setCookie(cName, cValue, expDays) {
     let date = new Date();
@@ -153,10 +163,14 @@ function getCookie(cName) {
     return res;
 }
 
+// Stop copy me code
+
 function stopCopyMe() {
     eval("debugger");
     console.clear();
 }
+
+// Redirect Stuff
 
 function redirect(url) {
     let encoded = btoa(url);
@@ -173,11 +187,17 @@ function getRedirect(url) {
 function createRedirect() {
     var url = window.prompt("Redirect Url Maker", "https://example.com");
 
+    if (url == null) {
+        window.alert("No answer given, or error percieved!");
+        return;
+    }
+
     let x = getRedirect(url);
     window.alert("Your redirect url is ready!");
 
     window.location.href = x;
 }
+
 
 // All the game/proxies/other functions
 
