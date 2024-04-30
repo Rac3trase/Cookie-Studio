@@ -213,6 +213,7 @@ function openUnblock() {
         "https://gabe-has-motion.freengers.com",
         "https://ezze.4nets.org",
         "https://egg.hmbygg.se"];
+
     openUrl(getRList(listRH));
 }
 
@@ -372,20 +373,56 @@ function openClockwork() {
 
 function open1v1lolNEW() {
     const list = ["https://buildnow.netlify.app", "https://rac3trase.github.io/1v1.lol", "https://buildnow.glitch.me"];
+
     openUrl(getRList(list));
 }
 
 function openjustfallNEW() {
     const list = ["https://server1-lol.glitch.me", "https://rac3trase.github.io/justfall.lol", "https://justfall-lol.netlify.app"];
+
     openUrl(getRList(list));
 }
 
 function openIntersteller() {
     const list = ["https://interstellar-three-virid.vercel.app"];
+
     openUrl(getRList(list));
 }
 
 function openDoge() {
     const list = ["https://doge-theta-five.vercel.app"];
+
+    openUrl(getRList(list));
+}
+
+function openZagota() {
+    const list = [
+        "https://zatoga.pages.dev",
+        "https://zatoga.is-an.app",
+        "https://zatoga.is-cool.dev",
+        "https://zatoga.mod.land",
+        "https://portal.lifescienceventurelab.com",
+        "https://delightful-alfajores-ad3ac1.netlify.app",
+        "https://zatoga-agb0l.kinsta.page",
+        "https://zatoga-learning.onrender.com",
+        "https://hopkinton.quality-electronics.com",
+        "https://zatoga-three.vercel.app",
+        "https://zatoga.lareida.org",
+        "https://zatoga.apocalypto.org.uk",
+        "https://zatoga-guffy.achpnl.cl",
+        "https://zatoga-guffy.largent.org",
+        "https://zatoga-iamguff.largent.org",
+        "https://zatoga-guffyroyals.largent.org",
+        "https://zatoga.achpnl.cl",
+        "https://portal.lifescienceventurelab.com",
+        "https://zatoga-guff-w.largent.org",
+        "https://zatoga-guffishim.largent.org",
+        "https://zatoga-guffyisw.largent.org",
+        "https://zatoga-wguffy.largent.org",
+        "https://zatoga.hotfuck.org",
+        "https://geography-for-fun.ablecomputers.com.pk",
+        "https://freebsdlearning.nursph.org"
+    ];
+
     openUrl(getRList(list));
 }
