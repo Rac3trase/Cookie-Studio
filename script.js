@@ -207,7 +207,7 @@ function openKour() {
 }
 
 function openUnblock() {
-    const listRH = ["https://house.hec.to",
+    const listRH = [
         "https://yhtjygh.haleymonroe.com",
         "https://ujymh.hktrustco.hk",
         "https://ty5hrtng.simonmonroe.com",
