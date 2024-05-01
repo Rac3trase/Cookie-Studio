@@ -1,11 +1,31 @@
 // Opening About:Blank but with function :D
 
-function openUrl(url1) {
-    var url = url1;
+function openUrl(url) {
+    function createLink(url) {
+        let encoded = btoa(url);
+        let newUrl = window.location.origin.concat("/Projects/Aboutblank/index.html?", encoded);
+        return newUrl;
+    }
+
+    function panicButton() {
+        win.console.log("Loading panic button...");
+        win.document.body.addEventListener("keydown", logKey);
+
+        function logKey(e) {
+            if (e.code == "Backslash") {
+                console.log("PANIC BUTTON ACTIVATED!")
+                win.location.href = "https://classroom.google.com/";
+
+                win.alert("ABORT MISSION!!!");
+            }
+        }
+    }
 
     if (url.substring(0, 8) !== "https://" && url.substring(0, 7) !== "http://") {
         url = "https://" + url;
     }
+
+    var yes = createLink(url);
 
     var win = window.open();
 
@@ -21,46 +41,24 @@ function openUrl(url1) {
     iframe.style.overflow = "hidden";
     iframe.referrerPolicy = "no-referrer";
     iframe.allowFullscreen = true;
-    iframe.src = url;
+    iframe.src = yes;
+    iframe.id = "IFRAME";
 
     var favicon = win.document.createElement('link');
     favicon.rel = 'icon';
     favicon.href = '/Images/GC.png';
+
     win.document.head.appendChild(favicon);
 
     win.document.body.appendChild(iframe);
+
+    panicButton(win);
+
+    return win;
 }
 
-function openGameUrl(url1) {
-    var url = url1;
-
-    if (url.substring(0, 8) !== "https://" && url.substring(0, 7) !== "http://") {
-        url = "https://" + url;
-    }
-
-    var win = window.open();
-
-    win.document.body.style.margin = "0";
-    win.document.body.style.height = "100vh";
-    win.document.title = "Calculator";
-
-    var iframe = win.document.createElement("iframe");
-    iframe.style.border = "none";
-    iframe.style.width = "100vw";
-    iframe.style.height = "100vh";
-    iframe.style.margin = "0";
-    iframe.style.overflow = "hidden";
-    iframe.id = "PLAYGAME";
-    iframe.referrerPolicy = "no-referrer";
-    iframe.allowFullscreen = true;
-    iframe.src = url;
-
-    var favicon = win.document.createElement('link');
-    favicon.rel = 'icon';
-    favicon.href = '/Images/Calculator.png';
-    win.document.head.appendChild(favicon);
-
-    win.document.body.appendChild(iframe);
+function openGameUrl(url) {
+    var win = openUrl(url);
 
     var button = win.document.createElement('button');
     button.innerHTML = '&#x26F6;';
@@ -74,13 +72,13 @@ function openGameUrl(url1) {
     button.style.padding = '10px 20px';
     button.style.fontSize = '16px';
     button.style.cursor = 'pointer';
-    button.style.zIndex = '2';
+    button.style.zIndex = '4';
     button.style.borderRadius = '10px';
 
     function fullscreenIframe() {
-        if (win.document.getElementById("PLAYGAME").requestFullscreen()) {
+        if (win.document.getElementById("IFRAME").requestFullscreen()) {
             win.console.log("Trying to go fullscreen!");
-            win.document.getElementById("PLAYGAME").requestFullscreen();
+            win.document.getElementById("IFRAME").document.body.getElementById("PLAYGAME").requestFullscreen();
         }
     }
 
@@ -400,6 +398,12 @@ function openLineRider() {
     const list = ["https://www.linerider.com/"];
 
     openGameUrl(getRList(list));
+}
+
+function openGTRANSLATE() {
+    const list = ["https://translate.google.com/?sl=en&tl=es&text=Hello!&op=translate"];
+
+    openUrl(getRList(list));
 }
 
 function openZagota() {

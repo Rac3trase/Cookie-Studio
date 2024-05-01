@@ -1,12 +1,16 @@
-window.document.addEventListener("keydown", logKey);
+function panicButton(win) {
+  win.document.addEventListener("keydown", logKey);
 
-console.log("Panic Button Ready :O");
+  function logKey(e) {
+    if (e.code == "Backslash") {
+      console.log("PANIC BUTTON ACTIVATED!")
+      win.location.href = "https://classroom.google.com/";
 
-function logKey(e) {
-  if (e.code=="Backslash") {
-    console.log("PANIC BUTTON ACTIVATED!")
-    window.location.href = "https://classroom.google.com/";
-
-    window.alert("ABORT MISSION!!!");
+      win.alert("ABORT MISSION!!!");
+    }
   }
 }
+
+panicButton(window);
+
+console.log("Panic Button Ready :O");
