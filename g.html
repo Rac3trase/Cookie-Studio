@@ -9,6 +9,7 @@
     <link type="text/css" rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="Scripts/keyEvent.js"></script>
 
     <div class="stars"></div>
 </head>
@@ -17,17 +18,17 @@
     <div id="mySidepanel" class="sidepanel">
         <a href="index.html">Home</a>
         <a href="projects.html">Projects</a>
-        <a href="g.html">Games</a>
+        <a class="active" href="g.html">Games</a>
         <a href="p.html">Proxies</a>
-        <a href="chat.html">Chat</a>
         <a href="videos.html">Videos</a>
+        <a href="chat.html">Chat</a>
         <a href="suggestion.html">Suggestion</a>
-        <a href="other.html">Other</a>
-
+        <a href="settings.html">Settings</a>
         <a href="updates.html">Updates</a>
-        
-        <div id="currentTime">Loading...</div>
+        <a href="other.html">Other</a>
     </div>
+
+    <p class="currentTime" id="currentTime">Loading...</p>
     
     <button id="openButton" class="openbtn" onclick="openNav()">&#9776;</button>
 
@@ -61,6 +62,7 @@
     <button class="btn1" onclick="openSA2()">Sonic Advance 2</button>
     <button class="btn1" onclick="openLA()">Little Alchemy 2</button>
     <button class="btn1" onclick="open3kh0LITE()">3kh0 Lite</button>
+    <button class="btn1" onclick="openLineRider()">Line Rider</button>
 
     <h1>Game Sites</h1>
 

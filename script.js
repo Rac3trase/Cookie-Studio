@@ -40,12 +40,6 @@ function openGameUrl(url1) {
 
     var win = window.open();
 
-    function fullscreenIframe() {
-        if (document.getElementById("PLAYGAME").requestFullscreen()) {
-            document.getElementById("PLAYGAME").requestFullscreen()
-        }
-    }
-
     win.document.body.style.margin = "0";
     win.document.body.style.height = "100vh";
     win.document.title = "Calculator";
@@ -82,6 +76,13 @@ function openGameUrl(url1) {
     button.style.cursor = 'pointer';
     button.style.zIndex = '2';
     button.style.borderRadius = '10px';
+
+    function fullscreenIframe() {
+        if (win.document.getElementById("PLAYGAME").requestFullscreen()) {
+            win.console.log("Trying to go fullscreen!");
+            win.document.getElementById("PLAYGAME").requestFullscreen();
+        }
+    }
 
     button.addEventListener('click', fullscreenIframe);
 
@@ -393,6 +394,12 @@ function openDoge() {
     const list = ["https://doge-theta-five.vercel.app"];
 
     openUrl(getRList(list));
+}
+
+function openLineRider() {
+    const list = ["https://www.linerider.com/"];
+
+    openGameUrl(getRList(list));
 }
 
 function openZagota() {
