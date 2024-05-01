@@ -41,8 +41,8 @@ function openGameUrl(url1) {
     var win = window.open();
 
     function fullscreenIframe() {
-        if (win.document.querySelector("iframe")) {
-            win.document.querySelector("iframe").requestFullscreen();
+        if (document.getElementById("PLAYGAME").requestFullscreen()) {
+            document.getElementById("PLAYGAME").requestFullscreen()
         }
     }
 
@@ -56,6 +56,7 @@ function openGameUrl(url1) {
     iframe.style.height = "100vh";
     iframe.style.margin = "0";
     iframe.style.overflow = "hidden";
+    iframe.id = "PLAYGAME";
     iframe.referrerPolicy = "no-referrer";
     iframe.allowFullscreen = true;
     iframe.src = url;
@@ -179,8 +180,7 @@ function redirect(url) {
 }
 
 function getRedirect(url) {
-    let encoded = encodeURI(url);
-    let newUrl = window.location.origin.concat("/gRedirect.html?", encoded);
+    let newUrl = window.location.origin.concat("/gRedirect.html?", url);
     return newUrl;
 }
 
@@ -420,7 +420,6 @@ function openZagota() {
         "https://zatoga-guffyisw.largent.org",
         "https://zatoga-wguffy.largent.org",
         "https://zatoga.hotfuck.org",
-        "https://geography-for-fun.ablecomputers.com.pk",
         "https://freebsdlearning.nursph.org"
     ];
 
