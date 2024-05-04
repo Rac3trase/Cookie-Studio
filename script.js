@@ -1,7 +1,26 @@
 // Opening About:Blank but with function :D
 
-function openUrl(url) {
+function openUrl(url, inject, unblock) {
+    function encode(str) {
+        if (!str) return str;
+        return encodeURIComponent(
+            str
+            .toString()
+            .split('')
+            .map((char, ind) =>
+                ind % 2 ? String.fromCharCode(char.charCodeAt() ^ 2) : char
+            )
+            .join('')
+        );
+    }
+
+    var sub = "https://interstellar-three-virid.vercel.app/a/";
+
     function createLink(url) {
+        if (unblock) {
+            var url = sub.concat(encode(url));
+        }
+
         let encoded = btoa(url);
         let newUrl = window.location.origin.concat("/Projects/Aboutblank/index.html?", encoded);
         return newUrl;
@@ -9,7 +28,7 @@ function openUrl(url) {
 
     function panicButton() {
         win.console.log("Loading panic button...");
-        win.document.body.addEventListener("keydown", logKey);
+        iframe.addEventListener("keydown", logKey);
 
         function logKey(e) {
             if (e.code == "Backslash") {
@@ -52,13 +71,29 @@ function openUrl(url) {
 
     win.document.body.appendChild(iframe);
 
-    panicButton(win);
+    iframe.onload = function() {
+        panicButton(win);
+
+        if (inject) {
+            var script = win.document.createElement('script');
+            script.src = inject;
+
+            var iframeInContent = win.document.getElementById("IFRAME");
+
+            if (iframeInContent) {
+                var iframeDoc = iframeInContent.contentDocument || iframeInContent.contentWindow.document;
+                iframeDoc.head.appendChild(script);
+            } else {
+                console.error("Could not find iframe in content.");
+            }
+        }
+    };
 
     return win;
 }
 
-function openGameUrl(url) {
-    var win = openUrl(url);
+function openGameUrl(url, inject, unblock) {
+    var win = openUrl(url, inject, unblock);
 
     var button = win.document.createElement('button');
     button.innerHTML = '&#x26F6;';
@@ -343,7 +378,7 @@ function openUnblockedGoogle() {
 }
 
 function openWindows11Remake() {
-    openGameUrl("https://artclass.site/service/hvtrs8%2F-wkn31%2Cbnugefgg.oe-");
+    openGameUrl("https://artclass.site/service/hvtrs8%2F-wkn31%2Cbnugefgg.oe-", false, true);
 }
 
 function openGbaEmulator() {
@@ -363,7 +398,7 @@ function openPHProxy() {
 }
 
 function openHistorySpot() {
-    openUrl("https://historyspot.com/activities");
+    openUrl("https://historyspot.com/activities", false, true);
 }
 
 function openClockwork() {
@@ -395,15 +430,9 @@ function openDoge() {
 }
 
 function openLineRider() {
-    const list = ["https://www.linerider.com/"];
+    const list = ["https://www.linerider.com/", false, true];
 
     openGameUrl(getRList(list));
-}
-
-function openGTRANSLATE() {
-    const list = ["https://translate.google.com/?sl=en&tl=es&text=Hello!&op=translate"];
-
-    openUrl(getRList(list));
 }
 
 function openZagota() {
@@ -435,4 +464,24 @@ function openZagota() {
     ];
 
     openUrl(getRList(list));
+}
+
+function openKahootHackz() {
+    openUrl("https://kahoot.it", "", true);
+}
+
+function openGimkitHackz() {
+    openUrl("https://gimkit.com/join", "", true);
+}
+
+function openBlooketHackz() {
+    openUrl("https://play.blooket.com/play", "/Scripts/Hacks/BlooketHackzGUI.js", true)
+}
+
+function openGTranslate() {
+    openUrl("https://translate.google.com", false, true);
+}
+
+function openNealFun() {
+    openUrl("https://neal.fun", false, true);
 }
