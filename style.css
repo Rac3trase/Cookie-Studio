@@ -377,3 +377,29 @@ input:checked+.slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
+
+.GCONTENT {
+    display: grid;
+    place-content: center;
+}
+
+.GCONTENT {
+    display: block;
+}
+
+select {
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    border: 0;
+    outline: solid;
+    outline-color: white;
+    outline-width: 2px;
+    transition: 1s;
+}
+
+option {
+    color: white;
+}

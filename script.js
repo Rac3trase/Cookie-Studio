@@ -5,12 +5,12 @@ function openUrl(url, inject, unblock) {
         if (!str) return str;
         return encodeURIComponent(
             str
-            .toString()
-            .split('')
-            .map((char, ind) =>
-                ind % 2 ? String.fromCharCode(char.charCodeAt() ^ 2) : char
-            )
-            .join('')
+                .toString()
+                .split('')
+                .map((char, ind) =>
+                    ind % 2 ? String.fromCharCode(char.charCodeAt() ^ 2) : char
+                )
+                .join('')
         );
     }
 
@@ -71,7 +71,7 @@ function openUrl(url, inject, unblock) {
 
     win.document.body.appendChild(iframe);
 
-    iframe.onload = function() {
+    iframe.onload = function () {
         panicButton(win);
 
         if (inject) {
@@ -484,4 +484,27 @@ function openGTranslate() {
 
 function openNealFun() {
     openUrl("https://neal.fun", false, true);
+}
+
+// Stuff
+function loadOptionsGames() {
+    var select = document.getElementById("options");
+    var gCon = document.getElementById("GCONTENT2")
+    var gplusCon = document.getElementById("GCONTENT1")
+
+    if (select[select.selectedIndex].text == "Games") {
+        gCon.style.display = "block";
+        var paras = document.getElementsByClassName('deleteAfterLoad');
+
+        while(paras[0]) {
+            paras[0].parentNode.removeChild(paras[0]);
+        }
+    } else if (select[select.selectedIndex].text == "Games++") {
+        gplusCon.style.display = "block";
+        var paras = document.getElementsByClassName('deleteAfterLoad');
+
+        while(paras[0]) {
+            paras[0].parentNode.removeChild(paras[0]);
+        }
+    }
 }
