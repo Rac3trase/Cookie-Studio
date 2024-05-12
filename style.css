@@ -403,3 +403,14 @@ select {
 option {
     color: white;
 }
+
+.banner {
+    position: relative;
+    transition: 1s;
+    width: 30%;
+}
+
+.banner:hover {
+    cursor: pointer;
+    scale: 1.05;
+}
